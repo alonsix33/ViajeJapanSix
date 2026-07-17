@@ -2,6 +2,7 @@ import React from 'react';
 import { C, FONT_D, FONT_B, seigaiha } from '../styles/tokens.js';
 import { SectionLabel, Card, Countdown, StampGrid } from '../components/ui/index.js';
 import { TRAVELERS } from '../data/travelers.js';
+import { downloadItineraryICS } from '../utils/ics.js';
 
 export function Overview() {
   const stats = [
@@ -150,6 +151,29 @@ export function Overview() {
           ))}
         </div>
       </Card>
+      <button
+        onClick={downloadItineraryICS}
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          gap: 8,
+          width: '100%',
+          textAlign: 'center',
+          margin: '0 0 24px',
+          fontFamily: FONT_B,
+          fontSize: 15,
+          fontWeight: 700,
+          color: '#fff',
+          background: C.ai,
+          border: 'none',
+          padding: '12px 16px',
+          borderRadius: 10,
+          cursor: 'pointer',
+        }}
+      >
+        📅 Agregar itinerario al calendario
+      </button>
       <SectionLabel kanji="印" color={C.shu}>
         Pasaporte de sellos
       </SectionLabel>

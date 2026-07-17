@@ -14,12 +14,12 @@ npm run build
 
 Compila sin errores ni warnings. Bundle de producción:
 
-| Archivo | Tamaño | Gzip |
-|---|---|---|
-| `index.html` | 1.44 kB | 0.66 kB |
-| `assets/index-*.css` | 0.35 kB | 0.26 kB |
-| `assets/index-*.js` | 272.10 kB | 83.49 kB |
-| `assets/pricedown-*.woff2` | 26.17 kB | — |
+| Archivo                    | Tamaño    | Gzip     |
+| -------------------------- | --------- | -------- |
+| `index.html`               | 1.44 kB   | 0.66 kB  |
+| `assets/index-*.css`       | 0.35 kB   | 0.26 kB  |
+| `assets/index-*.js`        | 272.10 kB | 83.49 kB |
+| `assets/pricedown-*.woff2` | 26.17 kB  | —        |
 
 Total `dist/`: ~316 kB. El JS bajó de 307 kB a 272 kB respecto al baseline monolítico (Fase 1) al
 extraer la fuente Pricedown del base64 embebido en el bundle a un asset binario aparte.
@@ -35,6 +35,7 @@ Se reemplazó `oxlint` (scaffold por defecto) por ESLint 9 (flat config) con
 `eslint-plugin-react-hooks` y `eslint-plugin-react-refresh`, más Prettier con
 `eslint-config-prettier`. Se corrigieron los 2 problemas reales que detectó el lint al migrar
 (ambos sin cambiar comportamiento visible — ver commit de Fase 3):
+
 - `Countdown`: cálculo de días movido de `setState` dentro de un efecto a un inicializador
   perezoso de `useState` (mismo resultado, sin renders en cascada).
 - `Reservas`: `catch` vacío del clipboard con comentario, sin binding de error sin usar.
@@ -47,8 +48,9 @@ Vuelos, Los Ángeles, Escala Seúl, Japón, Hoteles, Pokémon, Presupuesto) mont
 consola ni excepciones de React en ambos tamaños.
 
 Verificaciones específicas:
+
 - **Banner Los Santos**: renderiza con la fuente Pricedown (contorno negro vía `paintOrder:
-  "stroke"` en el objeto `style`) y el fondo SVG del atardecer/palmeras/skyline.
+"stroke"` en el objeto `style`) y el fondo SVG del atardecer/palmeras/skyline.
 - **Mapas interactivos** (LA, Tokio, Kioto, Osaka, Seúl): los 5 mapas cargan; se probó clic en un
   punto no-default (Griffith Observatory) y la nota inferior se actualiza correctamente.
 - **Countdown**: en la portada, calcula correctamente los días restantes al vuelo (23 jul 2026).
@@ -101,6 +103,7 @@ exactamente entre `src/data/*.js`, `viaje_japon_2026.jsx` (original) y
 
 Las 3 discrepancias que ya se habían reportado en el PASO 0 (antes de tocar nada) siguen siendo
 las mismas y **no se corrigieron**, tal como pedían las reglas:
+
 1. En `src/data/maps.js`, el punto `"gion"` del mapa de Kioto está tipado como `hotel` con nota
    "Su base", pero el hotel realmente reservado es Connect Inn Shichijo-Kamogawa, no Gion
    (inconsistencia interna del `.jsx` original, no introducida por el refactor).
