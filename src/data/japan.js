@@ -121,11 +121,11 @@ export const JP_CITIES = [
         items: [
           {
             tag: 'TRASLADO',
-            text: 'Check-out del ryokan. Tren a Odawara + Shinkansen a Kioto (~2h). Asiento derecho para ver el Fuji.',
+            text: 'Check-out del ryokan. Tren a Odawara + Shinkansen a Kioto (~3h puerta a puerta, contando el transbordo en Odawara). Asiento derecho para ver el Fuji.',
           },
           {
             tag: 'TRASLADO',
-            time: '~14:00',
+            time: '~14:30',
             text: 'Check-in en Connect Inn Shichijo (auto check-in: tener el email de acceso). Las maletas de Tokio ya esperan.',
           },
           {
@@ -139,7 +139,11 @@ export const JP_CITIES = [
         date: 'Lun 3 Ago',
         title: 'Templos del este + té',
         items: [
-          { tag: 'ZEN', time: '7am', text: 'Fushimi Inari: miles de torii, temprano y sin gente.' },
+          {
+            tag: 'ZEN',
+            time: '7am',
+            text: 'Fushimi Inari: miles de torii, temprano y sin gente. Limitarse a 45-60 min (los torii de la parte baja) — subir la montaña completa toma 1.5-2h y no deja tiempo para Kiyomizu-dera y el té.',
+          },
           { tag: 'ZEN', text: 'Kiyomizu-dera y las calles Sannenzaka / Ninenzaka.' },
           { tag: 'ZEN', text: 'Ceremonia del té en una machiya histórica (reservar).' },
         ],
@@ -224,9 +228,12 @@ export const JP_CITIES = [
         items: [
           {
             tag: 'TRASLADO',
-            text: 'Check-out del Marriott. Haruka Express desde Tennoji (justo abajo del hotel) a KIX (~50 min).',
+            text: 'Check-out del Marriott. Haruka Express desde Tennoji (justo abajo del hotel) a KIX (~35 min).',
           },
-          { tag: 'TIP', text: 'Estar en KIX ~13:00 para el vuelo PR 411 de las 15:15.' },
+          {
+            tag: 'TIP',
+            text: 'Estar en KIX ~12:15 para el vuelo PR 411 de las 15:15 (KIX recomienda 3h para vuelos internacionales en temporada alta).',
+          },
         ],
       },
     ],

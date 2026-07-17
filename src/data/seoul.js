@@ -46,7 +46,7 @@ export const SEOUL_PLAN = [
   {
     time: '09:00',
     tag: 'ZEN',
-    text: 'Palacio Gyeongbokgung al abrir (9am). Cambio de guardia y los hanbok. Lo más icónico.',
+    text: 'Palacio Gyeongbokgung al abrir (9am) y los hanbok. El cambio de guardia NO es al abrir: es a las 10:00 y 14:00 (~20 min) — quedarse hasta verlo antes de moverse a las 10:30.',
   },
   {
     time: '10:30',

@@ -4,7 +4,11 @@ export const LA_DAYS = [
     kanji: '着',
     title: 'Llegada + Paseo de la Fama',
     items: [
-      { tag: 'TRASLADO', time: '7:50', text: 'Aterrizan en LAX. Inmigración y aduana (~1.5h).' },
+      {
+        tag: 'TRASLADO',
+        time: '7:50',
+        text: 'Aterrizan en LAX. Inmigración y aduana (~2h: julio es temporada alta y la franja 6-9am concentra varios vuelos internacionales).',
+      },
       {
         tag: 'TRASLADO',
         time: '~10:30',
@@ -38,12 +42,12 @@ export const LA_DAYS = [
       },
       {
         tag: 'SALIR',
-        text: 'Santa Monica Pier = Del Perro Pier: la rueda de la fortuna sobre el Pacífico. Caminable desde Venice por la playa (~45 min) o Uber corto.',
+        text: 'Santa Monica Pier = Del Perro Pier: la rueda de la fortuna sobre el Pacífico. Caminable desde Venice por la playa (~1-1.5h a paso tranquilo, son ~3 millas de boardwalk) o Uber corto.',
       },
       {
         tag: 'TODOS',
         time: 'Atardecer',
-        text: 'Griffith Observatory = Galileo Observatory: el mirador sí o sí. La ciudad encendiéndose igual que la pausa del juego. Llegar ~1h antes para estacionar; planetario ~$7.',
+        text: 'Griffith Observatory = Galileo Observatory: el mirador sí o sí. La ciudad encendiéndose igual que la pausa del juego. Llegar ~1.5-2h antes para estacionar (en julio, fin de semana, el estacionamiento se llena); planetario ~$7.',
       },
       {
         tag: 'TIP',
