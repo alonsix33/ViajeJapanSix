@@ -1,6 +1,7 @@
 import { C, FONT_D, FONT_B } from '../../styles/tokens.js';
 import { Tag } from './Tag.jsx';
 import { Card } from './Card.jsx';
+import { RouteHop } from './RouteHop.jsx';
 
 export function DayCard({ d, accent }) {
   return (
@@ -39,15 +40,20 @@ export function DayCard({ d, accent }) {
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
             {d.items.map((it, i) => (
-              <div key={i} style={{ display: 'flex', gap: 9, alignItems: 'flex-start' }}>
-                <div style={{ flexShrink: 0, minWidth: 64 }}>
-                  <Tag t={it.tag} />
-                </div>
-                <div
-                  style={{ fontFamily: FONT_B, fontSize: 13.5, color: C.sumi, lineHeight: 1.55 }}
-                >
-                  {it.time && <strong style={{ color: accent, marginRight: 6 }}>{it.time}</strong>}
-                  {it.text}
+              <div key={i} style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+                {it.routes && it.routes.map((r, j) => <RouteHop key={j} route={r} />)}
+                <div style={{ display: 'flex', gap: 9, alignItems: 'flex-start' }}>
+                  <div style={{ flexShrink: 0, minWidth: 64 }}>
+                    <Tag t={it.tag} />
+                  </div>
+                  <div
+                    style={{ fontFamily: FONT_B, fontSize: 13.5, color: C.sumi, lineHeight: 1.55 }}
+                  >
+                    {it.time && (
+                      <strong style={{ color: accent, marginRight: 6 }}>{it.time}</strong>
+                    )}
+                    {it.text}
+                  </div>
                 </div>
               </div>
             ))}

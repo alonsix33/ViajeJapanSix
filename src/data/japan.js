@@ -193,23 +193,33 @@ export const JP_CITIES = [
             tag: 'ZEN',
             time: 'Mañana',
             text: "Día en Katsuo-ji (勝尾寺), el templo de los 'ganadores' en las montañas de Minoh, al norte. Miles de muñecos daruma rojos, naturaleza y más fresco que la ciudad.",
-          },
-          {
-            tag: 'TRASLADO',
-            text: 'Desde Tennoji: línea Midosuji (roja) directa hasta el final, Minoh-Kayano (~40-45 min). Verificar que el tren llegue hasta Minoh-Kayano (algunos terminan antes).',
-          },
-          {
-            tag: 'TRASLADO',
-            text: 'En Minoh-Kayano: Hankyu Bus Nº 30 a Katsuo-ji (~21 min, ¥800 c/u, andén 8). Para los 4, un taxi/Uber sale parecido y más cómodo.',
+            routes: [
+              {
+                mode: 'metro',
+                line: 'Línea Midosuji (roja)',
+                from: 'Estación Tennoji, Osaka',
+                to: 'Estación Minoh-Kayano',
+                time: '~40-45 min',
+                notes:
+                  'Directo hasta el final de línea, sin transbordos. Verificar en el andén que el tren llegue hasta Minoh-Kayano — algunos terminan antes, en Esaka o Senri-Chuo.',
+              },
+              {
+                mode: 'bus',
+                line: 'Hankyu Bus Nº 30, andén 8',
+                from: 'Estación Minoh-Kayano',
+                to: 'Katsuo-ji',
+                time: '~21 min',
+                cost: '¥800 por persona',
+                notes:
+                  'Corre cada ~30 min entre semana, 9:00-15:00. Para los 4, un taxi/Uber sale parecido y más cómodo. Chequear el último bus de regreso; taxi como respaldo.',
+              },
+            ],
           },
           {
             tag: 'TODOS',
             text: 'En el templo te dan una postal en blanco y hay 6 estaciones para ir estampando sellos y completar el dibujo — pura experiencia goshuincho. Recorrido ~1h30.',
           },
-          {
-            tag: 'TIP',
-            text: 'El bus entre semana corre cada ~30 min, 9:00-15:00. Ir en la mañana y chequear el último bus de regreso (taxi como respaldo). Llevar efectivo + IC card.',
-          },
+          { tag: 'TIP', text: 'Llevar efectivo + IC card para el bus y el templo.' },
         ],
       },
       {

@@ -7,5 +7,6 @@ export { DayCard } from './DayCard.jsx';
 export { FlightCard } from './FlightCard.jsx';
 export { HotelCard } from './HotelCard.jsx';
 export { TransportRow } from './TransportRow.jsx';
+export { RouteHop } from './RouteHop.jsx';
 export { Countdown } from './Countdown.jsx';
 export { StampGrid } from './StampGrid.jsx';
