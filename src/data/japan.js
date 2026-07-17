@@ -95,7 +95,12 @@ export const JP_CITIES = [
           },
           {
             tag: 'TODOS',
-            text: 'Dejan maletas en el Bansuirou Fukuzumi (cerca de la estación). Circuito Hakone: teleférico sobre Owakudani, barco en el lago Ashi.',
+            text: 'Dejan maletas ligeras en el Bansuirou Fukuzumi (cerca de la estación). Tren de montaña Hakone Tozan a Gora (~40 min) + funicular a Sounzan (~10 min) + teleférico sobre Owakudani (~10 min): mirador, humos volcánicos, huevos negros, foto del Fuji.',
+          },
+          {
+            tag: 'TRASLADO',
+            time: '~15:20',
+            text: 'Taxi directo Owakudani → Hakone-Yumoto (~20-25 min, sin transbordos ni colas). Se omite el barco del lago Ashi y el bus de Moto-Hakone.',
           },
           {
             tag: 'ZEN',
