@@ -50,7 +50,7 @@ export const CHECKLIST = [
   { urgent: false, text: 'Agregar maletas de bodega para Julisa y Adriel en los vuelos LATAM.' },
   {
     urgent: false,
-    text: 'Reservar entradas: teamLab, Skytree, ceremonia del té. (Universal Hollywood solo si hacen la opción A en LA).',
+    text: 'Reservar entradas: Skytree, ceremonia del té. (Universal Hollywood solo si hacen la opción A en LA).',
   },
   { urgent: false, text: 'Registrar Visit Japan Web (~1-2 semanas antes de llegar).' },
   { urgent: false, text: 'Registrar eTravel de Filipinas (72h antes del vuelo de regreso).' },
@@ -64,7 +64,6 @@ export const STAMPS = [
   { icon: '⛩️', name: 'Senso-ji', kanji: '寺', place: 'Tokio', color: C.shu },
   { icon: '🌃', name: 'Shibuya', kanji: '渋', place: 'Tokio', color: C.ai },
   { icon: '🗼', name: 'Skytree', kanji: '塔', place: 'Tokio', color: C.ai },
-  { icon: '✨', name: 'teamLab', kanji: '光', place: 'Tokio', color: C.sora },
   { icon: '🗻', name: 'Monte Fuji', kanji: '富', place: 'Hakone', color: C.matcha },
   { icon: '♨️', name: 'Onsen', kanji: '湯', place: 'Hakone', color: C.matcha },
   { icon: '⛩️', name: 'Fushimi Inari', kanji: '鳥', place: 'Kioto', color: C.shu },

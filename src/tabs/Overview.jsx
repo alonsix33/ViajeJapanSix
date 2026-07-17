@@ -2,6 +2,7 @@ import React from 'react';
 import { C, FONT_D, FONT_B, seigaiha } from '../styles/tokens.js';
 import { SectionLabel, Card, Countdown, StampGrid } from '../components/ui/index.js';
 import { TRAVELERS } from '../data/travelers.js';
+import { STAMPS } from '../data/misc.js';
 import { downloadItineraryICS } from '../utils/ics.js';
 
 export function Overview() {
@@ -9,7 +10,7 @@ export function Overview() {
     { k: '旅', v: '18', l: 'días' },
     { k: '都', v: '6', l: 'ciudades' },
     { k: '空', v: '4', l: 'vuelos' },
-    { k: '印', v: '15', l: 'sellos' },
+    { k: '印', v: String(STAMPS.length), l: 'sellos' },
   ];
   const route = [
     ['Lima', 'リマ'],

@@ -61,7 +61,6 @@ export const JP_CITIES = [
             tag: 'ZEN',
             text: 'Itoya (伊東屋) en Ginza, a 2 min del Apple Store: 12 pisos de papelería japonesa, el clip rojo gigante, papeles TAKEO (7º piso) y café con vista en el 12º. Pura estética goshuincho. Entre semana, mejor antes de las 4pm.',
           },
-          { tag: 'TODOS', text: 'teamLab (Planets/Borderless): arte digital. RESERVAR.' },
         ],
       },
       {

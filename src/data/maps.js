@@ -136,15 +136,6 @@ export const MAPS = {
         note: 'La torre más alta + Pokémon Center.',
       },
       {
-        id: 'teamlab',
-        x: 305,
-        y: 228,
-        t: 'tech',
-        icon: '✨',
-        label: 'teamLab (Toyosu)',
-        note: 'Arte digital inmersivo. Reservar antes.',
-      },
-      {
         id: 'shinagawa',
         x: 215,
         y: 240,
@@ -171,7 +162,6 @@ export const MAPS = {
       ['tokyost', 'asakusa', 0],
       ['asakusa', 'skytree', 0],
       ['shinagawa', 'haneda', 1],
-      ['tokyost', 'teamlab', 1],
       ['shinjuku', 'meiji', 0],
     ],
   },
