@@ -1,0 +1,9 @@
+export { Overview } from './Overview.jsx';
+export { Vuelos } from './Vuelos.jsx';
+export { LosAngeles } from './LosAngeles.jsx';
+export { Japon } from './Japon.jsx';
+export { Hoteles } from './Hoteles.jsx';
+export { Reservas } from './Reservas.jsx';
+export { Seul } from './Seul.jsx';
+export { Pokemon } from './Pokemon.jsx';
+export { Extra } from './Extra.jsx';

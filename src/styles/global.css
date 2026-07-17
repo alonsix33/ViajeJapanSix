@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Pricedown';
+  src: url('../assets/fonts/pricedown.woff2') format('woff2');
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D8CBB3; /* = C.line en styles/tokens.js */
+  border-radius: 6px;
+}
+
+a:hover {
+  opacity: .88;
+}
