@@ -14,10 +14,10 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #D8CBB3; /* = C.line en styles/tokens.js */
+  background: #d8cbb3; /* = C.line en styles/tokens.js */
   border-radius: 6px;
 }
 
 a:hover {
-  opacity: .88;
+  opacity: 0.88;
 }

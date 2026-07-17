@@ -1,0 +1,7 @@
+dist
+node_modules
+package-lock.json
+
+# Archivos de referencia (histórico/fuente de contexto), preservados intactos
+viaje_japon_2026.jsx
+MAESTRO_viaje_japon_2026.md

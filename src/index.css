@@ -1,9 +1,11 @@
-html, body, #root {
+html,
+body,
+#root {
   margin: 0;
   padding: 0;
 }
 
 body {
-  background: #F4EEE2;
+  background: #f4eee2;
   -webkit-font-smoothing: antialiased;
 }
