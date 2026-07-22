@@ -40,7 +40,7 @@ export const CHECKLIST = [
   },
   {
     urgent: false,
-    text: "Esperar el correo 'Approved' del K-ETA y guardarlo (ya aplicado para los 4).",
+    text: '✓ K-ETA aprobado para los 4 — correo "Approved" guardado.',
   },
   { urgent: false, text: 'Verificar pasaportes electrónicos con 6+ meses de vigencia.' },
   {

@@ -18,10 +18,38 @@ export const BOOKINGS = {
     { route: 'Los Ángeles → Lima', n: 'LA 2477 · LATAM', date: '9 ago', pnr: 'SBPTJN + CLFHNJ' },
   ],
   keta: [
-    { name: 'Alonso Javier', app: '26-LG-10084560' },
-    { name: 'Martha Julisa', app: '26-NB-10084561' },
-    { name: 'Javier Enrique', app: '26-SZ-10084563' },
-    { name: 'Adriel', app: '26-DQ-10084570' },
+    {
+      name: 'Alonso Javier',
+      fullName: 'Alonso Javier Ternero Fernandez Maldonado',
+      app: '26-LG-10084560',
+      status: 'aprobado',
+      passportLast4: '1993',
+      validUntil: '2027-10-14',
+    },
+    {
+      name: 'Martha Julisa',
+      fullName: 'Martha Julisa Fernandez Maldonado Noriega',
+      app: '26-NB-10084561',
+      status: 'aprobado',
+      passportLast4: '1991',
+      validUntil: '2027-10-14',
+    },
+    {
+      name: 'Javier Enrique',
+      fullName: 'Javier Enrique Ternero Herrera',
+      app: '26-SZ-10084563',
+      status: 'aprobado',
+      passportLast4: '4526',
+      validUntil: '2028-01-02',
+    },
+    {
+      name: 'Adriel',
+      fullName: 'Adriel Ternero Fernandez Maldonado',
+      app: '26-DQ-10084570',
+      status: 'aprobado',
+      passportLast4: '0656',
+      validUntil: '2028-10-09',
+    },
   ],
   hotels: [
     {
