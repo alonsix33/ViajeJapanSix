@@ -85,4 +85,5 @@ export const TABS = [
   { id: 'hoteles', label: 'Hoteles', kanji: '宿' },
   { id: 'pokemon', label: 'Pokémon', kanji: '電' },
   { id: 'extra', label: 'Presupuesto', kanji: '予算' },
+  { id: 'frases', label: 'Frases', kanji: '会話' },
 ];

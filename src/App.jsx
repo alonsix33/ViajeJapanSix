@@ -12,6 +12,7 @@ import {
   Hoteles,
   Pokemon,
   Extra,
+  Frases,
 } from './tabs/index.js';
 
 export default function App() {
@@ -26,6 +27,7 @@ export default function App() {
     hoteles: <Hoteles />,
     pokemon: <Pokemon />,
     extra: <Extra />,
+    frases: <Frases />,
   };
   return (
     <div style={{ minHeight: '100vh', background: C.washi, fontFamily: FONT_B, color: C.sumi }}>
