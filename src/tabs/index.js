@@ -7,3 +7,4 @@ export { Reservas } from './Reservas.jsx';
 export { Seul } from './Seul.jsx';
 export { Pokemon } from './Pokemon.jsx';
 export { Extra } from './Extra.jsx';
+export { Frases } from './Frases.jsx';
