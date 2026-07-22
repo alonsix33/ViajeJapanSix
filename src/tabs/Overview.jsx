@@ -169,6 +169,7 @@ export function Overview() {
           background: C.ai,
           border: 'none',
           padding: '12px 16px',
+          paddingBottom: 'calc(12px + env(safe-area-inset-bottom))',
           borderRadius: 10,
           cursor: 'pointer',
         }}

@@ -47,7 +47,14 @@ export function DayCard({ d, accent }) {
                     <Tag t={it.tag} />
                   </div>
                   <div
-                    style={{ fontFamily: FONT_B, fontSize: 13.5, color: C.sumi, lineHeight: 1.55 }}
+                    style={{
+                      flex: 1,
+                      minWidth: 0,
+                      fontFamily: FONT_B,
+                      fontSize: 13.5,
+                      color: C.sumi,
+                      lineHeight: 1.55,
+                    }}
                   >
                     {it.time && (
                       <strong style={{ color: accent, marginRight: 6 }}>{it.time}</strong>

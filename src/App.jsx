@@ -66,52 +66,73 @@ export default function App() {
             </div>
           </div>
         </div>
-        <div
-          style={{
-            maxWidth: 920,
-            margin: '0 auto',
-            padding: '0 12px',
-            display: 'flex',
-            gap: 2,
-            overflowX: 'auto',
-          }}
-        >
-          {TABS.map((t) => {
-            const active = tab === t.id;
-            return (
-              <button
-                key={t.id}
-                onClick={() => setTab(t.id)}
-                style={{
-                  flexShrink: 0,
-                  border: 'none',
-                  cursor: 'pointer',
-                  background: active ? C.washi : 'transparent',
-                  color: active ? C.ai : '#cdd9e6',
-                  fontFamily: FONT_B,
-                  fontWeight: 700,
-                  fontSize: 13,
-                  padding: '10px 14px',
-                  borderRadius: '10px 10px 0 0',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: 6,
-                  transition: 'background .2s',
-                }}
-              >
-                <span style={{ fontFamily: FONT_D, fontSize: 13, color: active ? C.shu : C.kin }}>
-                  {t.kanji}
-                </span>
-                {t.label}
-              </button>
-            );
-          })}
+        <div style={{ position: 'relative' }}>
+          <div
+            style={{
+              maxWidth: 920,
+              margin: '0 auto',
+              padding: '0 12px',
+              display: 'flex',
+              gap: 2,
+              overflowX: 'auto',
+            }}
+          >
+            {TABS.map((t) => {
+              const active = tab === t.id;
+              return (
+                <button
+                  key={t.id}
+                  onClick={() => setTab(t.id)}
+                  style={{
+                    flexShrink: 0,
+                    border: 'none',
+                    cursor: 'pointer',
+                    background: active ? C.washi : 'transparent',
+                    color: active ? C.ai : '#cdd9e6',
+                    fontFamily: FONT_B,
+                    fontWeight: 700,
+                    fontSize: 13,
+                    padding: '13px 14px',
+                    borderRadius: '10px 10px 0 0',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: 6,
+                    transition: 'background .2s',
+                  }}
+                >
+                  <span style={{ fontFamily: FONT_D, fontSize: 13, color: active ? C.shu : C.kin }}>
+                    {t.kanji}
+                  </span>
+                  {t.label}
+                </button>
+              );
+            })}
+          </div>
+          <div
+            aria-hidden="true"
+            style={{
+              position: 'absolute',
+              top: 0,
+              right: 0,
+              bottom: 0,
+              width: 28,
+              background: `linear-gradient(to right, transparent, ${C.aiDeep})`,
+              pointerEvents: 'none',
+            }}
+          />
         </div>
       </div>
       <div style={{ maxWidth: 920, margin: '0 auto', padding: '26px 18px 60px' }}>
         {content[tab]}
       </div>
-      <div style={{ borderTop: `1px solid ${C.line}`, padding: '18px', textAlign: 'center' }}>
+      <div
+        style={{
+          borderTop: `1px solid ${C.line}`,
+          padding: '18px',
+          paddingBottom: 'calc(18px + env(safe-area-inset-bottom))',
+          textAlign: 'center',
+        }}
+      >
         <div style={{ fontFamily: FONT_D, fontSize: 18, color: C.shu }}>良い旅を</div>
         <div style={{ fontFamily: FONT_B, fontSize: 11, color: '#999', marginTop: 2 }}>
           Buen viaje · 2026

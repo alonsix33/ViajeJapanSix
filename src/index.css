@@ -5,6 +5,11 @@ body,
   padding: 0;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   background: #f4eee2;
   -webkit-font-smoothing: antialiased;

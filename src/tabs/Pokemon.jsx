@@ -15,7 +15,7 @@ export function Pokemon() {
           padding: '26px 24px',
         }}
       >
-        <div style={{ position: 'absolute', right: -30, top: -30, opacity: 0.16 }}>
+        <div style={{ position: 'absolute', right: 0, top: -30, opacity: 0.16 }}>
           <Pokeball size={150} />
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 6 }}>

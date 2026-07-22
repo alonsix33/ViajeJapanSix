@@ -1,11 +1,15 @@
+import { useState } from 'react';
 import { C, TAGS, FONT_D, FONT_B, FONT_R, seigaiha } from '../styles/tokens.js';
 import { SectionLabel, Card, Callout } from '../components/ui/index.js';
 import { BOOKINGS } from '../data/bookings.js';
 
 export function Reservas() {
-  const copy = (txt) => {
+  const [copiedKey, setCopiedKey] = useState(null);
+  const copy = (txt, key) => {
     try {
       navigator.clipboard.writeText(txt);
+      setCopiedKey(key);
+      setTimeout(() => setCopiedKey((k) => (k === key ? null : k)), 1400);
     } catch {
       /* clipboard no disponible */
     }
@@ -101,25 +105,27 @@ export function Reservas() {
                 </div>
                 <div style={{ display: 'flex', gap: 8, marginTop: 10, flexWrap: 'wrap' }}>
                   <div
-                    onClick={() => copy(h.conf)}
+                    onClick={() => copy(h.conf, `hotel-conf-${i}`)}
                     style={{
                       cursor: 'pointer',
                       flex: 1,
                       minWidth: 130,
-                      background: C.washi2,
+                      background: copiedKey === `hotel-conf-${i}` ? TAGS.ZEN.bg : C.washi2,
                       borderRadius: 8,
                       padding: '6px 10px',
+                      transition: 'background .2s',
                     }}
                   >
                     <div
                       style={{
                         fontFamily: FONT_B,
                         fontSize: 9.5,
-                        color: '#999',
+                        color: copiedKey === `hotel-conf-${i}` ? C.matcha : '#999',
                         letterSpacing: 0.5,
+                        fontWeight: copiedKey === `hotel-conf-${i}` ? 700 : 400,
                       }}
                     >
-                      CONFIRMACIÓN
+                      {copiedKey === `hotel-conf-${i}` ? '✓ ¡COPIADO!' : 'CONFIRMACIÓN'}
                     </div>
                     <div
                       style={{
@@ -134,23 +140,25 @@ export function Reservas() {
                     </div>
                   </div>
                   <div
-                    onClick={() => copy(h.pin)}
+                    onClick={() => copy(h.pin, `hotel-pin-${i}`)}
                     style={{
                       cursor: 'pointer',
-                      background: C.washi2,
+                      background: copiedKey === `hotel-pin-${i}` ? TAGS.ZEN.bg : C.washi2,
                       borderRadius: 8,
                       padding: '6px 12px',
+                      transition: 'background .2s',
                     }}
                   >
                     <div
                       style={{
                         fontFamily: FONT_B,
                         fontSize: 9.5,
-                        color: '#999',
+                        color: copiedKey === `hotel-pin-${i}` ? C.matcha : '#999',
                         letterSpacing: 0.5,
+                        fontWeight: copiedKey === `hotel-pin-${i}` ? 700 : 400,
                       }}
                     >
-                      PIN
+                      {copiedKey === `hotel-pin-${i}` ? '✓ ¡COPIADO!' : 'PIN'}
                     </div>
                     <div
                       style={{
@@ -205,22 +213,23 @@ export function Reservas() {
                 <div style={{ fontFamily: FONT_B, fontSize: 11.5, color: '#888' }}>{f.n}</div>
               </div>
               <div
-                onClick={() => copy(f.pnr)}
+                onClick={() => copy(f.pnr, `flight-${i}`)}
                 style={{
                   cursor: 'pointer',
                   fontFamily: FONT_R,
                   fontSize: 13,
                   fontWeight: 700,
-                  color: C.shu,
-                  border: `1.5px dashed ${C.shu}`,
+                  color: copiedKey === `flight-${i}` ? C.matcha : C.shu,
+                  border: `1.5px dashed ${copiedKey === `flight-${i}` ? C.matcha : C.shu}`,
                   borderRadius: 6,
                   padding: '4px 9px',
                   letterSpacing: 1,
                   whiteSpace: 'nowrap',
                   flexShrink: 0,
+                  transition: 'color .2s, border-color .2s',
                 }}
               >
-                {f.pnr}
+                {copiedKey === `flight-${i}` ? '✓ ¡Copiado!' : f.pnr}
               </div>
             </Card>
           ))}
@@ -255,7 +264,7 @@ export function Reservas() {
                 {k.name}
               </span>
               <span
-                onClick={() => copy(k.app)}
+                onClick={() => copy(k.app, `keta-${i}`)}
                 style={{
                   cursor: 'pointer',
                   fontFamily: FONT_R,
@@ -263,9 +272,10 @@ export function Reservas() {
                   fontWeight: 700,
                   color: C.matcha,
                   letterSpacing: 0.5,
+                  transition: 'opacity .2s',
                 }}
               >
-                {k.app}
+                {copiedKey === `keta-${i}` ? '✓ ¡Copiado!' : k.app}
               </span>
             </div>
           ))}
