@@ -1,6 +1,6 @@
 import { C, TAGS, FONT_D, FONT_B, seigaiha } from '../styles/tokens.js';
 import { SectionLabel, Card, Callout } from '../components/ui/index.js';
-import { PHRASE_CATEGORIES, BONUS_PHRASE } from '../data/phrases.js';
+import { FEATURED_PHRASE, PHRASE_CATEGORIES, BONUS_PHRASE } from '../data/phrases.js';
 
 export function Frases() {
   return (
@@ -56,6 +56,52 @@ export function Frases() {
           Cortesía, pedir ayuda y lo esencial para moverse
         </div>
       </div>
+
+      <Card style={{ overflow: 'hidden', marginBottom: 22 }}>
+        <div style={{ display: 'flex', alignItems: 'stretch' }}>
+          <div style={{ width: 6, background: C.shu, flexShrink: 0 }} />
+          <div style={{ padding: '16px 18px', flex: 1, minWidth: 0 }}>
+            <div
+              style={{
+                fontFamily: FONT_B,
+                fontSize: 11,
+                letterSpacing: 2,
+                color: C.shu,
+                fontWeight: 700,
+                marginBottom: 8,
+              }}
+            >
+              🔑 EMPIEZA ASÍ
+            </div>
+            <div
+              style={{
+                fontFamily: FONT_D,
+                fontSize: 17,
+                fontWeight: 700,
+                color: C.sumi,
+                lineHeight: 1.4,
+                marginBottom: 6,
+              }}
+            >
+              {FEATURED_PHRASE.jp}
+            </div>
+            <div style={{ fontFamily: FONT_B, fontSize: 13.5, color: '#555', lineHeight: 1.5 }}>
+              {FEATURED_PHRASE.es}
+            </div>
+            <div
+              style={{
+                fontFamily: FONT_B,
+                fontSize: 11.5,
+                color: '#999',
+                lineHeight: 1.5,
+                marginTop: 6,
+              }}
+            >
+              {FEATURED_PHRASE.note}
+            </div>
+          </div>
+        </div>
+      </Card>
 
       {PHRASE_CATEGORIES.map((cat) => (
         <div key={cat.id} style={{ marginBottom: 22 }}>

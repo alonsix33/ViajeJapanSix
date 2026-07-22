@@ -1,3 +1,9 @@
+export const FEATURED_PHRASE = {
+  jp: 'Sumimasen. Tetsudatte moraemasu ka? Eigo daijōbu desu ka?',
+  es: 'Disculpe, ¿me puede ayudar? ¿Está bien si hablamos en inglés?',
+  note: 'La combinación perfecta para acercarte a cualquiera y empezar a pedir ayuda.',
+};
+
 export const PHRASE_CATEGORIES = [
   {
     id: 'cortesia',
