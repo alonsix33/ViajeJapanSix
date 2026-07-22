@@ -2,6 +2,7 @@ import { C, TAGS, FONT_D, FONT_B, FONT_KR, changsal } from '../styles/tokens.js'
 import { Tag, SectionLabel, Card, Callout, MapView } from '../components/ui/index.js';
 import { Taegeuk } from '../components/seals/index.js';
 import { MAPS } from '../data/maps.js';
+import { BOOKINGS } from '../data/bookings.js';
 import { KETA_STEPS, SEOUL_PLAN, SEOUL_TRAINS } from '../data/seoul.js';
 
 export function Seul() {
@@ -73,12 +74,72 @@ export function Seul() {
         <MapView data={MAPS.seul} />
       </div>
 
-      <Callout title="✅ Sí pueden salir — necesitan el K-ETA" color={C.matcha} bg={TAGS.ZEN.bg}>
+      <Callout title="✅ K-ETA · los 4 APROBADOS ✅" color={C.matcha} bg={TAGS.ZEN.bg}>
         Perú es visa-free para Corea (90 días), pero <strong>no está exento del K-ETA</strong> — no
-        figura en la lista de exención (a diferencia de Chile, Colombia y México). Con el K-ETA
-        aprobado pasan inmigración y recorren Seúl libremente. Cuesta ~$7 por persona, vale hasta 3
-        años y se tramita online.
+        figura en la lista de exención (a diferencia de Chile, Colombia y México). Ya se tramitó y{' '}
+        <strong>los 4 K-ETA están aprobados</strong>, así que pasan inmigración y recorren Seúl
+        libremente. Con el K-ETA aprobado <strong>no hace falta llenar la e-Arrival Card</strong> en
+        Incheon (viene indicado en el documento oficial).
       </Callout>
+
+      <Card style={{ padding: '6px 16px', marginBottom: 16 }}>
+        {BOOKINGS.keta.map((k, i) => (
+          <div
+            key={i}
+            style={{
+              padding: '12px 0',
+              borderBottom: i < BOOKINGS.keta.length - 1 ? `1px solid ${C.line}` : 'none',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: 4,
+            }}
+          >
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+              <span
+                style={{
+                  fontFamily: FONT_B,
+                  fontSize: 13.5,
+                  fontWeight: 700,
+                  color: C.sumi,
+                  flex: 1,
+                  minWidth: 0,
+                }}
+              >
+                {k.fullName}
+              </span>
+              <span
+                style={{
+                  fontFamily: FONT_B,
+                  fontSize: 10.5,
+                  fontWeight: 700,
+                  color: C.matcha,
+                  background: TAGS.ZEN.bg,
+                  borderRadius: 5,
+                  padding: '2px 8px',
+                  flexShrink: 0,
+                  whiteSpace: 'nowrap',
+                }}
+              >
+                ✅ Aprobado
+              </span>
+            </div>
+            <div
+              style={{
+                fontFamily: FONT_B,
+                fontSize: 12,
+                color: '#777',
+                display: 'flex',
+                gap: 10,
+                flexWrap: 'wrap',
+              }}
+            >
+              <span>Nº ETA-PER-{k.app}</span>
+              <span>Pasaporte ••••{k.passportLast4}</span>
+              <span>Válido hasta {k.validUntil}</span>
+            </div>
+          </div>
+        ))}
+      </Card>
 
       <Callout title="👦 Excepción por edad" color={C.ai} bg={TAGS.TECH.bg}>
         Quienes tengan <strong>17 años o menos</strong> (o 65+) están exentos del K-ETA, sin
@@ -104,13 +165,8 @@ export function Seul() {
           textDecoration: 'none',
         }}
       >
-        Tramitar el K-ETA en k-eta.go.kr →
+        Verificar el estado en k-eta.go.kr →
       </a>
-
-      <Callout title="⏰ Importante" color={C.shu} bg={TAGS.SALIR.bg}>
-        Solicítenlo <strong>mínimo 72 horas antes</strong> del vuelo (idealmente con 1-2 semanas).
-        Vale hasta 3 años, así que pueden sacarlo ya.
-      </Callout>
 
       <Callout
         title="🪪 e-Arrival Card (tarjeta de llegada digital)"
