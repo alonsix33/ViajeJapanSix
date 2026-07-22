@@ -2,8 +2,21 @@ import { C, FONT_D } from '../../styles/tokens.js';
 
 export function SectionLabel({ kanji, children, color = C.ai, kanjiFont = FONT_D }) {
   return (
-    <div style={{ display: 'flex', alignItems: 'center', gap: 12, margin: '0 0 18px' }}>
-      <span style={{ fontFamily: kanjiFont, fontSize: 30, color, fontWeight: 800 }}>{kanji}</span>
+    <div
+      style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: 12, margin: '0 0 18px' }}
+    >
+      <span
+        style={{
+          fontFamily: kanjiFont,
+          fontSize: 30,
+          color,
+          fontWeight: 800,
+          flexShrink: 0,
+          whiteSpace: 'nowrap',
+        }}
+      >
+        {kanji}
+      </span>
       <h2 style={{ fontFamily: FONT_D, fontSize: 24, color: C.sumi, fontWeight: 700, margin: 0 }}>
         {children}
       </h2>

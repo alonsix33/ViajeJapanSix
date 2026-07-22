@@ -36,22 +36,43 @@ export function RouteHop({ route }) {
         style={{
           display: 'flex',
           alignItems: 'center',
+          flexWrap: 'wrap',
           gap: 8,
           width: '100%',
           border: 'none',
           background: 'none',
-          padding: '7px 10px',
+          padding: '11px 10px',
           cursor: 'pointer',
           textAlign: 'left',
         }}
       >
         <span style={{ fontSize: 15, flexShrink: 0 }}>{icon}</span>
-        <span style={{ fontFamily: FONT_B, fontSize: 12, color: '#777', flex: 1, minWidth: 0 }}>
+        <span
+          style={{
+            fontFamily: FONT_B,
+            fontSize: 12,
+            color: '#777',
+            flex: 1,
+            minWidth: 0,
+            overflowWrap: 'anywhere',
+          }}
+        >
           {route.line ? `${route.line} · ` : ''}
           {route.from} → {route.to}
         </span>
         {route.time && (
-          <span style={{ fontFamily: FONT_D, fontSize: 12, fontWeight: 700, color: C.ai, flexShrink: 0 }}>
+          <span
+            style={{
+              fontFamily: FONT_D,
+              fontSize: 12,
+              fontWeight: 700,
+              color: C.ai,
+              flexShrink: 0,
+              maxWidth: '40%',
+              whiteSpace: 'normal',
+              wordBreak: 'break-word',
+            }}
+          >
             {route.time}
           </span>
         )}
