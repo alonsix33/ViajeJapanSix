@@ -237,6 +237,60 @@ export function Reservas() {
       </div>
 
       <div style={{ marginTop: 24 }}>
+        <SectionLabel kanji="旅" color={C.sunset}>
+          Tours y actividades
+        </SectionLabel>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: 9 }}>
+          {BOOKINGS.tours.map((t, i) => (
+            <Card
+              key={i}
+              style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '11px 14px' }}
+            >
+              <span
+                style={{
+                  fontFamily: FONT_B,
+                  fontSize: 10.5,
+                  fontWeight: 700,
+                  color: '#fff',
+                  background: C.sunset,
+                  borderRadius: 5,
+                  padding: '1px 7px',
+                  flexShrink: 0,
+                }}
+              >
+                {t.date}
+              </span>
+              <div style={{ flex: 1, minWidth: 0 }}>
+                <div style={{ fontFamily: FONT_B, fontSize: 13.5, fontWeight: 700, color: C.sumi }}>
+                  {t.name}
+                </div>
+                <div style={{ fontFamily: FONT_B, fontSize: 11.5, color: '#888' }}>{t.note}</div>
+              </div>
+              <div
+                onClick={() => copy(t.conf, `tour-${i}`)}
+                style={{
+                  cursor: 'pointer',
+                  fontFamily: FONT_R,
+                  fontSize: 12,
+                  fontWeight: 700,
+                  color: copiedKey === `tour-${i}` ? C.matcha : C.sunset,
+                  border: `1.5px dashed ${copiedKey === `tour-${i}` ? C.matcha : C.sunset}`,
+                  borderRadius: 6,
+                  padding: '4px 9px',
+                  letterSpacing: 0.5,
+                  whiteSpace: 'nowrap',
+                  flexShrink: 0,
+                  transition: 'color .2s, border-color .2s',
+                }}
+              >
+                {copiedKey === `tour-${i}` ? '✓ ¡Copiado!' : t.conf}
+              </div>
+            </Card>
+          ))}
+        </div>
+      </div>
+
+      <div style={{ marginTop: 24 }}>
         <SectionLabel kanji="韓" color={C.matcha}>
           K-ETA (Corea)
         </SectionLabel>
