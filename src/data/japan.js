@@ -80,7 +80,8 @@ export const JP_CITIES = [
                 to: 'Estación Akihabara, Tokio',
                 time: '~20 min (12 min caminando + ~5 min de tren)',
                 cost: '~¥150 p/p',
-                notes: 'El tramo más corto y simple del itinerario: solo 2 paradas, sin transbordos.',
+                notes:
+                  'El tramo más corto y simple del itinerario: solo 2 paradas, sin transbordos.',
               },
             ],
           },
@@ -144,6 +145,15 @@ export const JP_CITIES = [
           {
             tag: 'ZEN',
             text: 'Itoya (伊東屋) en Ginza, a 2 min del Apple Store: 12 pisos de papelería japonesa, el clip rojo gigante, papeles TAKEO (7º piso) y café con vista en el 12º. Pura estética goshuincho. Entre semana, mejor antes de las 4pm.',
+          },
+          {
+            tag: 'STAR',
+            time: '19:30',
+            text: 'Tour JDM nocturno con Wangun OG: GTR & JDM Special Experience Tour / Daikoku & Night City. Nissan GT-R R35, 3 personas (sin mamá). Pickup 7:29-7:30 PM en el hotel (Nest Hotel Tokyo Yaesu, Nihonbashi Kabutocho 18-3), drop-off en Courtyard Tokyo Station. 3 horas: Daikoku PA (car meet, 45 min) + Rainbow Bridge (drive-through) + Tokyo Tower (foto).',
+          },
+          {
+            tag: 'TIP',
+            text: 'Reserva confirmada WGO-98164965. Volver caminando del Courtyard Tokyo Station al Nest Hotel (~5-8 min) o taxi corto si es muy tarde.',
           },
         ],
       },

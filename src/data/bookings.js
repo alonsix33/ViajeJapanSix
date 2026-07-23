@@ -51,6 +51,14 @@ export const BOOKINGS = {
       validUntil: '2028-10-09',
     },
   ],
+  tours: [
+    {
+      name: 'Tour JDM Daikoku (Wangun OG)',
+      date: '30 jul',
+      conf: 'WGO-98164965',
+      note: 'Nissan GTR35 · 3 personas · pickup 7:29 PM hotel · drop-off Courtyard Tokyo Station',
+    },
+  ],
   hotels: [
     {
       place: 'Rodeway Inn',

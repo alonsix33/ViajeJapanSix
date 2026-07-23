@@ -19,6 +19,12 @@ export const BUDGET = [
     note: 'hotel, trenes, comida, actividades',
     color: C.shu,
   },
+  {
+    label: 'Tour JDM (Tokio)',
+    amount: '¥91,350 (~$610)',
+    note: 'GTR35, 3 personas, Wangun OG — pagado',
+    color: C.rose,
+  },
 ];
 
 export const CHECKLIST = [
@@ -46,6 +52,10 @@ export const CHECKLIST = [
   {
     urgent: false,
     text: '✓ Hoteles reservados (los 6, con cancelación gratis). Ver pestaña Reservas.',
+  },
+  {
+    urgent: false,
+    text: '✓ Tour JDM Daikoku reservado (Wangun OG, jueves 30 jul, WGO-98164965).',
   },
   { urgent: false, text: 'Agregar maletas de bodega para Julisa y Adriel en los vuelos LATAM.' },
   {
