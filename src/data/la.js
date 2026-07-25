@@ -58,8 +58,8 @@ export const LA_DAYS = [
   },
   {
     date: 'Sáb 25 Jul',
-    kanji: '発',
-    title: 'Rockford Hills + al aeropuerto',
+    kanji: '街',
+    title: 'Rockford Hills + noche libre',
     items: [
       {
         tag: 'TRASLADO',
@@ -81,13 +81,30 @@ export const LA_DAYS = [
       },
       {
         tag: 'TRASLADO',
-        time: '~18:45',
-        text: 'Recogen maletas. Uber XL a LAX = LSIA (~$50-75, tráfico de sábado).',
+        time: 'Tarde',
+        text: 'Recogen maletas y check-in en el hotel de la noche extra en LA [nombre pendiente]. Sin vuelo esa noche — se quedan un día más en LA en vez de salir el 25.',
+      },
+    ],
+  },
+  {
+    date: 'Dom 26 Jul',
+    kanji: '発',
+    title: 'Día libre + vuelo a Tokio',
+    items: [
+      {
+        tag: 'ZEN',
+        time: 'Mañana',
+        text: 'Mañana libre en LA, sin actividades forzadas — descansar, desayunar con calma o pasear cerca del hotel.',
       },
       {
         tag: 'TRASLADO',
-        time: '~20:00',
-        text: 'En LAX (TBIT). Vuelo Asiana a Seúl sale 23:00 (se adelantó 30 min).',
+        time: '11:00',
+        text: 'Check-out del hotel. Uber XL a LAX = LSIA (Terminal B).',
+      },
+      {
+        tag: 'TRASLADO',
+        time: '14:00',
+        text: 'Vuelo JAL JL15 a Tokio, directo y sin escalas (11h 25min). Llegan a Haneda 17:25 del 27 Jul.',
       },
     ],
   },

@@ -15,6 +15,15 @@ export const HOTELS = [
         url: 'https://www.booking.com',
       },
       {
+        name: '[Hotel pendiente — noche extra]',
+        tag: '25-26 jul',
+        booked: true,
+        rating: '—',
+        price: '—',
+        why: 'Noche extra en LA (se quedan un día más en vez de salir el 25 jul, por el cambio de vuelo a JAL JL15). Ya está reservado — actualizar nombre y datos cuando estén disponibles.',
+        url: 'https://www.booking.com',
+      },
+      {
         name: 'The Hollywood Roosevelt',
         tag: 'Alternativa',
         rating: '4.4',

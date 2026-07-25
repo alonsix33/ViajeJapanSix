@@ -7,13 +7,15 @@ import {
   Reservas,
   Vuelos,
   LosAngeles,
-  Seul,
   Japon,
   Hoteles,
   Pokemon,
   Extra,
   Frases,
 } from './tabs/index.js';
+// Seul se archivó de la navegación activa (ver src/tabs/Seul.jsx): el vuelo
+// nuevo (JAL JL15) es directo, sin escala en Seúl. Se deja como referencia
+// por si sirve para un futuro viaje a Corea.
 
 export default function App() {
   const [tab, setTab] = useState('general');
@@ -22,7 +24,6 @@ export default function App() {
     reservas: <Reservas />,
     vuelos: <Vuelos />,
     la: <LosAngeles />,
-    seul: <Seul />,
     japon: <Japon />,
     hoteles: <Hoteles />,
     pokemon: <Pokemon />,

@@ -2,15 +2,15 @@ import { C } from '../styles/tokens.js';
 
 export const BUDGET = [
   {
-    label: 'Vuelos (ya pagados)',
-    amount: '$13,464',
-    note: '+ 46,580 millas LATAM Pass',
+    label: 'Vuelos',
+    amount: 'Pendiente',
+    note: 'Asiana OZ203/178 cancelado (reembolso pendiente) → reemplazado por JAL JL15. Actualizar monto cuando se confirmen reembolso + cargo nuevo.',
     color: C.ai,
   },
   {
-    label: 'Los Ángeles (~2 días)',
+    label: 'Los Ángeles (~3 días)',
     amount: '$3,090',
-    note: 'hotel, comida, traslados, compras',
+    note: 'hotel, comida, traslados, compras (monto no incluye la noche extra nueva)',
     color: C.sunset,
   },
   {
@@ -64,7 +64,7 @@ export const CHECKLIST = [
   },
   { urgent: false, text: 'Registrar Visit Japan Web (~1-2 semanas antes de llegar).' },
   { urgent: false, text: 'Registrar eTravel de Filipinas (72h antes del vuelo de regreso).' },
-  { urgent: false, text: 'Comprar eSIM o Pocket WiFi (cubrir Japón + Corea para la escala).' },
+  { urgent: false, text: 'Comprar eSIM o Pocket WiFi (cobertura Japón).' },
   { urgent: false, text: 'Contratar seguro de viaje (vuelos separados = sin protección cruzada).' },
 ];
 
@@ -90,7 +90,6 @@ export const TABS = [
   { id: 'reservas', label: 'Reservas', kanji: '予約' },
   { id: 'vuelos', label: 'Vuelos', kanji: '空路' },
   { id: 'la', label: 'Los Ángeles', kanji: '羅府' },
-  { id: 'seul', label: 'Escala Seúl', kanji: '서울' },
   { id: 'japon', label: 'Japón', kanji: '日本' },
   { id: 'hoteles', label: 'Hoteles', kanji: '宿' },
   { id: 'pokemon', label: 'Pokémon', kanji: '電' },
