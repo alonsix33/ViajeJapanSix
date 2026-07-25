@@ -4,10 +4,10 @@ export const BOOKINGS = {
   flights: [
     { route: 'Lima → Los Ángeles', n: 'LA 2478 · LATAM', date: '23 jul', pnr: 'FISZIV' },
     {
-      route: 'Los Ángeles → Tokio (vía Seúl)',
-      n: 'OZ 203/178 · Asiana',
-      date: '25 jul',
-      pnr: 'BV7OJC',
+      route: 'Los Ángeles → Tokio (directo)',
+      n: 'JL 15 · Japan Airlines',
+      date: '26 jul',
+      pnr: 'Pendiente',
     },
     {
       route: 'Osaka → Los Ángeles (vía Manila)',

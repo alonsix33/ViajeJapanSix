@@ -10,16 +10,16 @@ export const JP_CITIES = [
     days: [
       {
         date: 'Lun 27 Jul',
-        title: 'Llegada nocturna a Haneda',
+        title: 'Llegada a Haneda',
         items: [
           {
             tag: 'TRASLADO',
-            time: '23:30',
-            text: 'Aterrizan en Haneda T3. Caminan al Villa Fontaine Grand (conectado a la T3). A dormir.',
+            time: '17:25',
+            text: 'Aterrizan en Haneda T3 — vuelo JAL JL15, directo desde LAX, sin escalas. Caminan al Villa Fontaine Grand (conectado a la T3).',
           },
           {
             tag: 'TIP',
-            text: 'Sacar efectivo (7-Bank), tarjeta IC Welcome Suica, activar eSIM. Si hay ánimo, el onsen del hotel.',
+            text: 'Sacar efectivo (7-Bank), tarjeta IC Welcome Suica, activar eSIM. Cena temprano y tranquila cerca del hotel — vienen de un vuelo directo de 11h 25min. Si hay ánimo, el onsen del hotel.',
           },
         ],
       },

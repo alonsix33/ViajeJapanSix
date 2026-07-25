@@ -42,7 +42,7 @@ export function LosAngeles() {
           Los Ángeles
         </h1>
         <div style={{ fontFamily: FONT_B, fontSize: 13, color: '#fff', opacity: 0.95 }}>
-          23 – 25 de julio · ~2 días en Hollywood
+          23 – 26 de julio · ~3 días en Hollywood
         </div>
         <div
           style={{

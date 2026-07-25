@@ -1,14 +1,12 @@
 import { LA_DAYS } from '../data/la.js';
-import { SEOUL_PLAN } from '../data/seoul.js';
 import { JP_CITIES } from '../data/japan.js';
 
 // Julio y agosto de 2026 son los únicos meses del viaje.
 const MONTHS = { Jul: 7, Ago: 8 };
 
-// Sin DST en Japón/Corea; PDT (UTC-7) cubre todo el tramo de LA en jul-ago 2026.
+// Sin DST en Japón; PDT (UTC-7) cubre todo el tramo de LA en jul-ago 2026.
 const TZ_OFFSET_HOURS = {
   la: -7,
-  seul: 9,
   japon: 9,
 };
 
@@ -122,17 +120,6 @@ export function generateItineraryICS() {
       });
       if (ev) events.push(ev);
     }
-  }
-
-  for (const item of SEOUL_PLAN) {
-    const ev = buildEvent({
-      dateLabel: '27 Jul',
-      timeLabel: item.time,
-      tag: item.tag,
-      text: item.text,
-      offsetHours: TZ_OFFSET_HOURS.seul,
-    });
-    if (ev) events.push(ev);
   }
 
   for (const city of JP_CITIES) {
