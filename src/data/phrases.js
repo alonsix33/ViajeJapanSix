@@ -6,6 +6,49 @@ export const FEATURED_PHRASE = {
 
 export const PHRASE_CATEGORIES = [
   {
+    id: 'basicas',
+    title: 'Básicas · sí, no y check-in',
+    kanji: '基本',
+    color: '#1B3A5C',
+    items: [
+      { jp: 'Hai.', pron: 'Jai.', es: 'Sí.' },
+      { jp: 'Iie.', pron: 'Ii-e.', es: 'No.' },
+      { jp: 'Sō desu.', pron: 'Soo des.', es: 'Así es / Correcto.' },
+      {
+        jp: 'Sō desu ka?',
+        pron: 'Soo des ka.',
+        es: '¿Ah, sí? / ¿De verdad?',
+        note: 'La escucharás muchísimo — también sirve para mostrar interés en lo que te dicen.',
+      },
+      { jp: 'Watashi wa Alonso desu.', pron: 'Wa-ta-shi wa A-lon-so des.', es: 'Soy Alonso.' },
+      { jp: 'Kazoku desu.', pron: 'Ka-zo-ku des.', es: 'Somos una familia.' },
+      {
+        jp: 'Kore wa watashi no kazoku desu.',
+        pron: 'Ko-re wa wa-ta-shi no ka-zo-ku des.',
+        es: 'Esta es mi familia.',
+      },
+      { jp: 'Perū kara kimashita.', pron: 'Pe-rú ka-ra ki-ma-shi-ta.', es: 'Venimos de Perú.' },
+      {
+        jp: 'Perū desu.',
+        pron: 'Pe-rú des.',
+        es: 'Somos de Perú.',
+        note: 'Respuesta corta y muy natural.',
+      },
+      {
+        jp: 'Hajimemashite.',
+        pron: 'Ha-ji-me-ma-sh-te.',
+        es: 'Mucho gusto.',
+        note: 'Se usa cuando conoces a alguien por primera vez.',
+      },
+      {
+        jp: 'Dōzo yoroshiku onegaishimasu.',
+        pron: 'Doo-zo yo-ro-shi-ku o-ne-gai-shi-ma-su.',
+        es: 'Encantado de conocerle / Espero que nos llevemos bien.',
+        note: 'Muy japonesa y muy educada — se dice justo después de presentarte, por ejemplo al hacer check-in.',
+      },
+    ],
+  },
+  {
     id: 'cortesia',
     title: 'Cortesía',
     kanji: '礼儀',

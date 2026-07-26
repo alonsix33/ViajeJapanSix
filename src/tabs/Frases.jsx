@@ -123,6 +123,18 @@ export function Frases() {
                 <div style={{ fontFamily: FONT_D, fontSize: 15.5, fontWeight: 700, color: C.sumi }}>
                   {p.jp}
                 </div>
+                {p.pron && (
+                  <div
+                    style={{
+                      fontFamily: FONT_B,
+                      fontSize: 12,
+                      fontStyle: 'italic',
+                      color: C.ai,
+                    }}
+                  >
+                    {p.pron}
+                  </div>
+                )}
                 <div style={{ fontFamily: FONT_B, fontSize: 13, color: '#555', lineHeight: 1.5 }}>
                   {p.es}
                 </div>
