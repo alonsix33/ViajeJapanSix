@@ -8,7 +8,14 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg', 'icons/*.png'],
+      includeAssets: [
+        'favicon.svg',
+        'favicon.ico',
+        'favicon-16x16.png',
+        'favicon-32x32.png',
+        'apple-touch-icon.png',
+        'icons/*.png',
+      ],
       manifest: {
         name: 'Los Ángeles & Japón 2026 · Viaje Familia Ternero',
         short_name: 'Viaje 2026',
