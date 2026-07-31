@@ -57,6 +57,10 @@ export const CHECKLIST = [
     urgent: false,
     text: '✓ Tour JDM Daikoku reservado (Wangun OG, jueves 30 jul, WGO-98164965).',
   },
+  {
+    urgent: true,
+    text: 'Antes de llegar a Kioto (2 ago): confirmar con Connect Inn/Kanade (+81 75-671-8880) que el equipaje enviado desde Tokio ya llegó a la recepción, si pueden entrar antes de las 15:00, y pedir el código de acceso al cuarto con anticipación (el edificio no tiene personal).',
+  },
   { urgent: false, text: 'Agregar maletas de bodega para Julisa y Adriel en los vuelos LATAM.' },
   {
     urgent: false,
