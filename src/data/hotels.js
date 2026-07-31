@@ -110,9 +110,9 @@ export const HOTELS = [
         name: 'Connect Inn Shichijo-Kamogawa',
         tag: '2-5 ago',
         booked: true,
-        rating: '4.2',
+        rating: '3.0',
         price: '~$300/noche',
-        why: 'Apartamento entero con cocina para 4, baño privado. A ~1.2km de la estación. Auto check-in. Cancela gratis.',
+        why: 'Apartamento entero con cocina para 4, baño privado, en Higashiyama-ku. OJO: el check-in y recojo de equipaje es en una recepción aparte (Kanade Kyoto Ekimae, ~1km del alojamiento) — el edificio donde duermen no tiene personal. Reseñas mixtas (3.0/5): algunos huéspedes reportan esperas y cuartos no listos. Confirmar accesos con anticipación. Tel. +81 75-671-8880.',
         url: 'https://www.booking.com',
       },
       {

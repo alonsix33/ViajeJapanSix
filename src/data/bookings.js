@@ -102,7 +102,7 @@ export const BOOKINGS = {
       dates: '2-5 ago',
       conf: '5027360565',
       pin: '8956',
-      note: 'Auto check-in · email de acceso · ¥2,400 impuesto en efectivo al llegar',
+      note: 'Check-in en recepción aparte (Kanade Kyoto Ekimae, ~1km del alojamiento, tel. +81 75-671-8880) · ¥2,400 impuesto en efectivo al llegar',
       color: C.shu,
     },
     {

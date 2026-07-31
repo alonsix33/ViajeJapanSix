@@ -239,18 +239,31 @@ export const JP_CITIES = [
           {
             tag: 'TRASLADO',
             time: '~14:30',
-            text: 'Check-in en Connect Inn Shichijo (auto check-in: tener el email de acceso). Las maletas de Tokio ya esperan.',
+            text: 'OJO: son 2 ubicaciones distintas, ~1km entre ellas. Primero check-in y recojo de equipaje en la recepción (Kanade Kyoto Ekimae), luego caminata/taxi hasta el alojamiento real (Connect Inn Shichijo-Kamogawa) — no hay personal en el edificio donde se duerme.',
             routes: [
               {
                 mode: 'caminar',
-                line: 'A pie — Karasuma-dori hacia el sur, luego Shichijo-dori al este',
-                from: 'Kyoto Station, salida Karasuma Chuo-guchi (Central/Norte), Kioto',
-                to: 'Connect Inn Shichijo-Kamogawa, Kioto',
-                time: '~15 min',
+                line: 'A pie desde la salida Hachijo-guchi (lado Shinkansen)',
+                from: 'Kyoto Station, salida Hachijo-guchi, Kioto',
+                to: '奏 京都駅前レセプション (Kanade Kyoto Ekimae Reception), Minami-ku, Kioto',
+                time: '~5-7 min',
                 notes:
-                  'Salir por Karasuma Chuo-guchi (la principal, frente a la Torre de Kioto), NO por Hachijo-guchi (lado Shinkansen). Calle plana, bien señalizada en inglés, 1.2km. Con maletas grandes, taxi desde la fila de Karasuma-guchi (~¥800-1000, 5 min).',
+                  'Aquí se hace el check-in real y se recoge el equipaje enviado desde Tokio (confirmar con el hotel que ya haya llegado). Tel. +81 75-671-8880.',
+              },
+              {
+                mode: 'caminar',
+                line: 'A pie o taxi',
+                from: '奏 京都駅前レセプション (Kanade Kyoto Ekimae Reception), Kioto',
+                to: 'Connect Inn Shichijo-Kamogawa, Higashiyama-ku, Kioto',
+                time: '~15-20 min caminando (~1km)',
+                notes:
+                  'Con maletas después de un día de viaje, mejor taxi corto desde la recepción. Pedir ahí mismo el código/instrucciones de acceso al cuarto, ya que no hay nadie en el edificio para recibirlos.',
               },
             ],
+          },
+          {
+            tag: 'TIP',
+            text: 'Llegan 14:00-15:00, justo antes de que abra oficialmente el check-in (15:00-22:00) — confirmar con la recepción (+81 75-671-8880) si pueden esperar ahí o si hay margen para entrar antes.',
           },
           {
             tag: 'TIP',
