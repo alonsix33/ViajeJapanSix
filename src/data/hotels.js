@@ -84,12 +84,12 @@ export const HOTELS = [
     color: C.matcha,
     list: [
       {
-        name: 'Bansuirou Fukuzumi',
+        name: 'Senkei',
         tag: '1-2 ago',
         booked: true,
-        rating: '4.7',
-        price: '~$255',
-        why: 'Hakone-Yumoto, cerca de la estación. Ryokan tradicional, baños termales, cena+desayuno. Cancela hasta 29 jul.',
+        rating: '—',
+        price: '—',
+        why: 'Yumoto 592, Hakone (Kanagawa) — cerca de la estación. Reemplaza al Bansuirou Fukuzumi que estaba antes en el plan. Tel. +81 460-855-500. Check-in 15:00-21:00, check-out hasta las 11:00.',
         url: 'https://www.booking.com',
       },
       {

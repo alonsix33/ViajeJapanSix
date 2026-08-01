@@ -204,7 +204,7 @@ export const JP_CITIES = [
           },
           {
             tag: 'TODOS',
-            text: 'Dejan maletas ligeras en el Bansuirou Fukuzumi (cerca de la estación). Tren de montaña Hakone Tozan a Gora (~40 min) + funicular a Sounzan (~10 min) + teleférico sobre Owakudani (~10 min): mirador, humos volcánicos, huevos negros, foto del Fuji.',
+            text: 'Dejan maletas ligeras en el Senkei, Yumoto 592 (cerca de la estación). Tren de montaña Hakone Tozan a Gora (~40 min) + funicular a Sounzan (~10 min) + teleférico sobre Owakudani (~10 min): mirador, humos volcánicos, huevos negros, foto del Fuji.',
           },
           {
             tag: 'TRASLADO',
@@ -214,7 +214,7 @@ export const JP_CITIES = [
           {
             tag: 'ZEN',
             time: '~16:00',
-            text: 'Check-in en el ryokan. Onsen, cena kaiseki, yukata. Lo más zen del viaje.',
+            text: 'Check-in en el ryokan (Senkei, tel. +81 460-855-500, check-in 15:00-21:00). Onsen, cena kaiseki, yukata. Lo más zen del viaje.',
           },
           { tag: 'ZEN', text: 'Madrugada: mejor vista del Monte Fuji desde Hakone.' },
         ],

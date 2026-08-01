@@ -88,12 +88,12 @@ export const BOOKINGS = {
       color: C.ai,
     },
     {
-      place: 'Bansuirou Fukuzumi',
+      place: 'Senkei',
       city: 'Hakone',
       dates: '1-2 ago',
-      conf: '5397247010',
-      pin: '3664',
-      note: 'Ryokan · cancela hasta 29 jul',
+      conf: 'Pendiente',
+      pin: 'Pendiente',
+      note: 'Yumoto 592, Hakone · reemplaza al Bansuirou Fukuzumi · tel. +81 460-855-500',
       color: C.matcha,
     },
     {
