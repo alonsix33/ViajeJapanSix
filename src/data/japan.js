@@ -204,7 +204,39 @@ export const JP_CITIES = [
           },
           {
             tag: 'TODOS',
-            text: 'Dejan maletas ligeras en el Senkei, Yumoto 592 (cerca de la estación). Tren de montaña Hakone Tozan a Gora (~40 min) + funicular a Sounzan (~10 min) + teleférico sobre Owakudani (~10 min): mirador, humos volcánicos, huevos negros, foto del Fuji.',
+            text: 'Dejan maletas ligeras en el Senkei, Yumoto 592 (cerca de la estación). Tren de montaña Hakone Tozan a Gora (~40 min) + funicular a Sounzan (~10 min) + teleférico sobre Owakudani (~10 min): mirador, humos volcánicos, huevos negros, foto del Fuji. Comprar boleto de ida (片道券) en cada tramo, no ida y vuelta — se baja en taxi.',
+            routes: [
+              {
+                mode: 'tren',
+                line: 'Hakone Tozan Railway',
+                from: 'Estación Hakone-Yumoto, Hakone',
+                to: 'Estación Gora, Hakone',
+                time: '~40 min',
+                cost: '~¥460 p/p (ida) · Suica/Pasmo funciona',
+                notes:
+                  'Único tramo de los 3 que acepta tarjeta IC — tocar y listo, sin boleto de papel.',
+              },
+              {
+                mode: 'funicular',
+                line: 'Hakone Tozan Cable Car',
+                from: 'Estación Gora, Hakone',
+                to: 'Estación Sounzan, Hakone',
+                time: '~10 min',
+                cost: '~¥330 p/p (ida)',
+                notes:
+                  'No acepta Suica — comprar boleto de ida (片道券) en la máquina o taquilla de Gora.',
+              },
+              {
+                mode: 'teleferico',
+                line: 'Hakone Ropeway',
+                from: 'Estación Sounzan, Hakone',
+                to: 'Owakudani, Hakone',
+                time: '~10 min',
+                cost: '¥2,000 p/p (ida, 片道券) — verificado en el letrero de tarifas de la estación',
+                notes:
+                  'Tarifa plana ("全区間均一") sea cual sea el tramo que recorras. NO acepta Suica. Comprar el 片道券 (ida) de ¥2,000, no el 往復券 (ida y vuelta) de ¥3,000, ya que la bajada es en taxi.',
+              },
+            ],
           },
           {
             tag: 'TRASLADO',
