@@ -91,9 +91,9 @@ export const BOOKINGS = {
       place: 'Senkei',
       city: 'Hakone',
       dates: '1-2 ago',
-      conf: 'Pendiente',
-      pin: 'Pendiente',
-      note: 'Yumoto 592, Hakone · reemplaza al Bansuirou Fukuzumi · tel. +81 460-855-500',
+      conf: '5397247010',
+      pin: '3664',
+      note: 'Yumoto 592, Hakone (250-0311) · tel. +81 460-85-5500 · cena solo si check-in antes de 19:00',
       color: C.matcha,
     },
     {

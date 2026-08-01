@@ -87,9 +87,9 @@ export const HOTELS = [
         name: 'Senkei',
         tag: '1-2 ago',
         booked: true,
-        rating: '—',
-        price: '—',
-        why: 'Yumoto 592, Hakone (Kanagawa) — cerca de la estación. Reemplaza al Bansuirou Fukuzumi que estaba antes en el plan. Tel. +81 460-855-500. Check-in 15:00-21:00, check-out hasta las 11:00.',
+        rating: '4.1',
+        price: '~$474 (4 personas)',
+        why: 'Yumoto 592, Hakone 250-0311 — cerca de la estación. Habitación de estilo japonés, 4 futones, baño privado. Tel. +81 460-85-5500. Check-in 15:00-21:00 (cena solo si llegan antes de 19:00), check-out hasta las 11:00. Ojo: zonas de baño compartidas no permiten tatuajes.',
         url: 'https://www.booking.com',
       },
       {

@@ -214,7 +214,11 @@ export const JP_CITIES = [
           {
             tag: 'ZEN',
             time: '~16:00',
-            text: 'Check-in en el ryokan (Senkei, tel. +81 460-855-500, check-in 15:00-21:00). Onsen, cena kaiseki, yukata. Lo más zen del viaje.',
+            text: 'Check-in en el ryokan (Senkei, tel. +81 460-85-5500, check-in 15:00-21:00). Onsen, cena kaiseki, yukata. Lo más zen del viaje.',
+          },
+          {
+            tag: 'TIP',
+            text: 'La cena solo se sirve si el check-in es antes de las 19:00 (si no, no la reembolsan) — con la vuelta de Owakudani a las ~16:00 hay margen de sobra, pero ojo si algo se atrasa.',
           },
           { tag: 'ZEN', text: 'Madrugada: mejor vista del Monte Fuji desde Hakone.' },
         ],
