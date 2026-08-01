@@ -209,7 +209,18 @@ export const JP_CITIES = [
           {
             tag: 'TRASLADO',
             time: '~15:20',
-            text: 'Taxi directo Owakudani → Hakone-Yumoto (~20-25 min, sin transbordos ni colas). Se omite el barco del lago Ashi y el bus de Moto-Hakone.',
+            text: 'Taxi directo Owakudani → Senkei (~20-25 min, sin transbordos ni colas). Se omite el barco del lago Ashi y el bus de Moto-Hakone.',
+            routes: [
+              {
+                mode: 'taxi',
+                line: 'Pedir por app (GO o Uber) — Owakudani NO tiene fila de taxis fija',
+                from: 'Owakudani (estación del teleférico), Hakone',
+                to: 'Senkei, Yumoto 592, Hakone',
+                time: '~20-25 min',
+                notes:
+                  'Solo Togendai (al otro lado del lago) tiene parada fija de taxis. En Owakudani hay que pedirlo por la app GO o Uber (ambas funcionan en Hakone y despachan taxis con licencia). Poner como destino directo el hotel, no la estación, ya que las maletas ya están ahí. Plan B si no hay señal: bus de Izu Hakone desde Owakudani, sale cada hora (~26 min) — no es el bus de Moto-Hakone que se está evitando.',
+              },
+            ],
           },
           {
             tag: 'ZEN',
