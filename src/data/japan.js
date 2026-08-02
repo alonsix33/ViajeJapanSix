@@ -394,9 +394,68 @@ export const JP_CITIES = [
         date: 'Mar 4 Ago',
         title: 'Excursión a Nara',
         items: [
-          { tag: 'TODOS', text: 'Parque de Nara: alimentar a los ciervos que hacen reverencias.' },
-          { tag: 'TODOS', text: 'Todai-ji: el Gran Buda de 15 metros.' },
+          {
+            tag: 'TRASLADO',
+            time: '7:30am',
+            text: 'Ida a Nara: caminar a Kyoto Station y tomar el Kintetsu Kyuko (expreso, sin reserva) hasta Kintetsu-Nara. Esa estación queda mucho más cerca del parque y el Gran Buda que la Estación JR Nara — por eso Kintetsu y no JR para este tramo, aunque el costo sea casi igual.',
+            routes: [
+              {
+                mode: 'caminar',
+                line: 'A pie hasta los andenes de Kintetsu',
+                from: 'Connect Inn Shichijo-Kamogawa, Kioto',
+                to: 'Kyoto Station (andenes Kintetsu, lado central/Hachijo-guchi), Kioto',
+                toQuery: 'Kyoto Station, Kyoto',
+                time: '~15 min',
+                notes:
+                  'Los andenes de Kintetsu están en el extremo este de Kyoto Station, señalizados en naranja.',
+              },
+              {
+                mode: 'tren',
+                line: 'Kintetsu Kyoto Line, Kyuko (expreso) — no hace falta el Limited Express con reserva',
+                from: 'Kyoto Station, Kioto',
+                to: 'Kintetsu Nara Station, Nara',
+                time: '~45 min',
+                cost: '~¥760 p/p',
+                notes:
+                  'Sale cada 15-30 min, sin reserva. Ojo: algunos trenes de esta línea no llegan directo a Nara y piden transbordo en Yamato-Saidaiji (mismo andén, 2 paradas más) — mirar el letrero del tren o preguntar antes de subir. Llegando a Kintetsu Nara Station, el Parque de Nara y el Gran Buda quedan a ~5-10 min caminando (vs. ~20-25 min desde la Estación JR Nara).',
+              },
+            ],
+          },
+          {
+            tag: 'TODOS',
+            time: '9:00am',
+            text: 'Parque de Nara: alimentar a los ciervos que hacen reverencias. Ir temprano, antes de que lleguen los tours grandes (y antes de que apriete el calor de agosto).',
+          },
+          {
+            tag: 'TODOS',
+            time: '10:00am',
+            text: 'Todai-ji: el Gran Buda de 15 metros. Daibutsu-den abre 7:30am-5:30pm en agosto, entrada ¥800 adultos. Llevar agua y protección solar — el mediodía en Nara es caluroso y hay poca sombra en el parque.',
+          },
           { tag: 'TIP', text: 'Alt.: Kinkaku-ji (Pabellón Dorado) + bambú de Arashiyama.' },
+          {
+            tag: 'TRASLADO',
+            time: '4:30pm',
+            text: 'Regreso a Kioto: mismo camino en sentido inverso. Salir a media tarde para evitar la hora pico de las 5-6pm y llegar con tiempo de sobra para cenar en Kioto.',
+            routes: [
+              {
+                mode: 'tren',
+                line: 'Kintetsu Kyoto Line, Kyuko (expreso)',
+                from: 'Kintetsu Nara Station, Nara',
+                to: 'Kyoto Station, Kioto',
+                time: '~45 min',
+                cost: '~¥760 p/p',
+                notes:
+                  'Mismo tipo de tren que a la ida, sin reserva. Confirmar que no pida transbordo en Yamato-Saidaiji.',
+              },
+              {
+                mode: 'caminar',
+                line: 'A pie desde los andenes Kintetsu',
+                from: 'Kyoto Station, Kioto',
+                to: 'Connect Inn Shichijo-Kamogawa, Kioto',
+                time: '~15 min',
+              },
+            ],
+          },
         ],
       },
     ],
