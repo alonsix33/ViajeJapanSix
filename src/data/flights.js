@@ -54,7 +54,7 @@ export const FLIGHTS = [
     plane: 'Airbus A330 / Boeing 777',
     fare: 'Economy Value',
     pnr: 'X64MHH',
-    price: 'USD 4,712.42',
+    price: 'USD 4,630.10 (JPY 726,980)',
     extra: [
       'Reacomodados: PR 112 cancelado → ahora PR 122 (reconfirmar asientos)',
       'Escala 20h 35min en Manila (MNL)',
