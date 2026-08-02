@@ -293,6 +293,7 @@ export const JP_CITIES = [
                 line: 'A pie desde la salida Hachijo-guchi (lado Shinkansen)',
                 from: 'Kyoto Station, salida Hachijo-guchi, Kioto',
                 to: '奏 京都駅前レセプション (Kanade Kyoto Ekimae Reception), Minami-ku, Kioto',
+                toQuery: 'Higashikujo Minamisannocho 26-1, Minami-ku, Kyoto',
                 time: '~5-7 min',
                 notes:
                   'Aquí se hace el check-in real y se recoge el equipaje enviado desde Tokio (confirmar con el hotel que ya haya llegado). Tel. +81 75-671-8880.',
@@ -301,6 +302,7 @@ export const JP_CITIES = [
                 mode: 'caminar',
                 line: 'A pie o taxi',
                 from: '奏 京都駅前レセプション (Kanade Kyoto Ekimae Reception), Kioto',
+                fromQuery: 'Higashikujo Minamisannocho 26-1, Minami-ku, Kyoto',
                 to: 'Connect Inn Shichijo-Kamogawa, Higashiyama-ku, Kioto',
                 time: '~15-20 min caminando (~1km)',
                 notes:
@@ -378,8 +380,8 @@ export const JP_CITIES = [
               {
                 mode: 'caminar',
                 line: 'A pie — Sannenzaka → Ninenzaka → Yasaka-jinja → Gion',
-                from: 'Kiyomizu-dera / Sannenzaka-Ninenzaka, Kioto',
-                to: 'Gion / Kawaramachi (centro, zona típica de machiya de té), Kioto',
+                from: 'Kiyomizu-dera, Kioto',
+                to: 'Gion (centro, zona típica de machiya de té), Kioto',
                 time: '~25-30 min',
                 notes:
                   'Todo cuesta abajo, ruta peatonal turística bien señalizada, sin necesidad de tren. Alternativa en bus si van cansados: Kyoto City Bus línea 100 o 206 desde la parada Kiyomizu-michi (~10 min, ~¥230 p/p).',
@@ -418,7 +420,9 @@ export const JP_CITIES = [
                 mode: 'tren',
                 line: 'JR Special Rapid (Shinkaisoku, 新快速)',
                 from: 'Estación de Kioto, Kioto',
+                fromQuery: 'Kyoto Station, Kyoto',
                 to: 'Estación de Osaka (Umeda), Osaka',
+                toQuery: 'Osaka Station, Osaka',
                 time: '~29 min',
                 cost: '~¥580 p/p',
                 notes:
@@ -428,7 +432,9 @@ export const JP_CITIES = [
                 mode: 'metro',
                 line: 'Osaka Metro Midosuji Line (roja), dirección sur (Namba/Tennoji)',
                 from: 'Estación de Osaka (caminar a Umeda Station, Osaka Metro), Osaka',
+                fromQuery: 'Umeda Station, Osaka',
                 to: 'Estación Tennoji, Osaka',
+                toQuery: 'Tennoji Station, Osaka',
                 time: '~15-20 min (+ ~5-8 min caminando el transbordo)',
                 cost: '~¥280-320 p/p',
                 notes:
@@ -447,7 +453,8 @@ export const JP_CITIES = [
               {
                 mode: 'metro',
                 line: 'Osaka Metro Midosuji Line, dirección Umeda/Shin-Osaka',
-                from: 'Osaka Marriott Miyako / Estación Tennoji, Osaka',
+                from: 'Estación Tennoji, Osaka',
+                fromQuery: 'Tennoji Station, Osaka',
                 to: 'Estación Shinsaibashi, Osaka',
                 time: '~7 min',
                 cost: '~¥240 p/p',
@@ -472,7 +479,8 @@ export const JP_CITIES = [
                 mode: 'metro',
                 line: 'Línea Midosuji (roja)',
                 from: 'Estación Tennoji, Osaka',
-                to: 'Estación Minoh-Kayano',
+                fromQuery: 'Tennoji Station, Osaka',
+                to: 'Estación Minoh-Kayano, Osaka',
                 time: '~40-45 min',
                 notes:
                   'Directo hasta el final de línea, sin transbordos. Verificar en el andén que el tren llegue hasta Minoh-Kayano — algunos terminan antes, en Esaka o Senri-Chuo.',
@@ -480,8 +488,8 @@ export const JP_CITIES = [
               {
                 mode: 'bus',
                 line: 'Hankyu Bus Nº 30, andén 8',
-                from: 'Estación Minoh-Kayano',
-                to: 'Katsuo-ji',
+                from: 'Estación Minoh-Kayano, Osaka',
+                to: 'Katsuo-ji, Minoo, Osaka',
                 time: '~21 min',
                 cost: '¥800 por persona',
                 notes:
@@ -508,7 +516,8 @@ export const JP_CITIES = [
               {
                 mode: 'metro',
                 line: 'Osaka Metro Tanimachi Line, dirección Higashi-Umeda/Moriguchi',
-                from: 'Osaka Marriott Miyako / Estación Tennoji, Osaka',
+                from: 'Estación Tennoji, Osaka',
+                fromQuery: 'Tennoji Station, Osaka',
                 to: 'Estación Tanimachi 4-chome (Puerta Otemon), Osaka',
                 time: '~12 min (7 min de tren + 5 min caminando)',
                 cost: '~¥240 p/p',
@@ -541,6 +550,7 @@ export const JP_CITIES = [
                 mode: 'caminar',
                 line: 'A pie, sin tren',
                 from: 'Mercado Kuromon Ichiba, Osaka',
+                fromQuery: 'Kuromon Ichiba Market, Osaka',
                 to: 'Den Den Town, Osaka',
                 time: '~8-10 min',
                 notes:

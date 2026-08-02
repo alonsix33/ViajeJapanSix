@@ -17,9 +17,14 @@ export function RouteHop({ route }) {
   const [open, setOpen] = useState(false);
   const icon = MODE_ICON[route.mode] || '➜';
   const mapsUrl = buildGoogleMapsUrl({
-    origin: route.from,
-    destination: route.to,
-    mode: route.mapsMode || (route.mode === 'caminar' ? 'walking' : route.mode === 'taxi' ? 'driving' : 'transit'),
+    // fromQuery/toQuery: para lugares cuyo nombre comercial no geocodifica bien
+    // (ej. una recepción chica sin presencia en mapas) — se usa una dirección
+    // verificada solo para el link, sin cambiar el texto que se muestra.
+    origin: route.fromQuery || route.from,
+    destination: route.toQuery || route.to,
+    mode:
+      route.mapsMode ||
+      (route.mode === 'caminar' ? 'walking' : route.mode === 'taxi' ? 'driving' : 'transit'),
   });
 
   return (
@@ -85,9 +90,20 @@ export function RouteHop({ route }) {
               {route.notes}
             </div>
           )}
-          <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', fontFamily: FONT_B, fontSize: 11.5, color: '#888' }}>
+          <div
+            style={{
+              display: 'flex',
+              gap: 10,
+              flexWrap: 'wrap',
+              fontFamily: FONT_B,
+              fontSize: 11.5,
+              color: '#888',
+            }}
+          >
             {route.cost && <span>💴 {route.cost}</span>}
-            {route.reserve && <span style={{ color: C.shu, fontWeight: 700 }}>● reservar antes</span>}
+            {route.reserve && (
+              <span style={{ color: C.shu, fontWeight: 700 }}>● reservar antes</span>
+            )}
           </div>
           <a
             href={mapsUrl}
