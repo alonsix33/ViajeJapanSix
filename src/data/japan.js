@@ -412,7 +412,33 @@ export const JP_CITIES = [
         items: [
           {
             tag: 'TRASLADO',
-            text: 'Check-out del Connect Inn. JR Special Rapid a Osaka (~30 min). Check-in en Osaka Marriott Miyako (Tennoji).',
+            text: 'Check-out del Connect Inn — día de mudanza completa, cargan con todo el equipaje (a diferencia de Hakone, aquí no se manda nada por takkyubin). JR Special Rapid a Osaka + transbordo a la Línea Midosuji hasta Tennoji (~1h puerta a puerta). Check-in en Osaka Marriott Miyako.',
+            routes: [
+              {
+                mode: 'tren',
+                line: 'JR Special Rapid (Shinkaisoku, 新快速)',
+                from: 'Estación de Kioto, Kioto',
+                to: 'Estación de Osaka (Umeda), Osaka',
+                time: '~29 min',
+                cost: '~¥580 p/p',
+                notes:
+                  'Directo, sin transbordos dentro de este tramo. Toque de Suica al entrar y salir, sin reserva.',
+              },
+              {
+                mode: 'metro',
+                line: 'Osaka Metro Midosuji Line (roja), dirección sur (Namba/Tennoji)',
+                from: 'Estación de Osaka (caminar a Umeda Station, Osaka Metro), Osaka',
+                to: 'Estación Tennoji, Osaka',
+                time: '~15-20 min (+ ~5-8 min caminando el transbordo)',
+                cost: '~¥280-320 p/p',
+                notes:
+                  'La Estación JR de Osaka y Umeda Station (metro) están conectadas/muy cerca. Mismo Suica sirve para ambos sistemas, sin reserva. Día de mudanza completa (todo el equipaje) — dar margen extra en el transbordo y usar ascensores si están disponibles.',
+              },
+            ],
+          },
+          {
+            tag: 'TIP',
+            text: 'No usar el Haruka Express para este tramo: aunque es directo (sin transbordo), cuesta ¥1,890-2,400 p/p — el descuento turístico del Haruka solo aplica hacia/desde el aeropuerto de Kansai — vs. ~¥860-900 p/p total por JR + Metro.',
           },
           {
             tag: 'SALIR',
