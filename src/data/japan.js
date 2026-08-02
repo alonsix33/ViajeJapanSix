@@ -374,6 +374,11 @@ export const JP_CITIES = [
             ],
           },
           {
+            tag: 'COMIDA',
+            time: '12:30pm',
+            text: 'Almuerzo bajando por Sannenzaka/Ninenzaka: la callejuela está llena de puestos y restaurantes chicos — yudofu (tofu hervido), udon, croquetas, dango. No hace falta reservar, se come de pie o en algún local pequeño de camino a Gion. La ceremonia del té más tarde trae dulces (wagashi), pero no reemplaza el almuerzo.',
+          },
+          {
             tag: 'ZEN',
             text: 'Ceremonia del té en una machiya histórica (reservar).',
             routes: [
