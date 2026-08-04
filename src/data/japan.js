@@ -527,6 +527,22 @@ export const JP_CITIES = [
               },
             ],
           },
+          {
+            tag: 'STAR',
+            time: 'Noche',
+            text: '🦀 Parada obligada: el cangrejo gigante de Kani Doraku y el letrero del corredor Glico en el puente Ebisubashi — los dos íconos de Dotonbori, e inspiración real del distrito "Sotenbori" de los videojuegos Yakuza / Like a Dragon (el cangrejo del juego es casi idéntico a este). Foto sí o sí antes de cenar.',
+            routes: [
+              {
+                mode: 'caminar',
+                line: 'A pie desde el Pokémon Center (Daimaru Shinsaibashi)',
+                from: 'Pokémon Center Osaka DX, Shinsaibashi, Osaka',
+                to: 'Kani Doraku Dotonbori, Osaka',
+                time: '~5 min',
+                notes:
+                  'Caminen al sur hasta cruzar el canal Dotonbori — el cangrejo gigante se ve desde lejos, iluminado. El letrero de Glico (el corredor de neón) está 1-2 min más allá, sobre el puente Ebisubashi.',
+              },
+            ],
+          },
           { tag: 'COMIDA', time: 'Noche', text: 'Dotonbori: takoyaki, okonomiyaki, kushikatsu.' },
         ],
       },
