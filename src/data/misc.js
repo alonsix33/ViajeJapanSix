@@ -87,6 +87,7 @@ export const STAMPS = [
   { icon: '🍜', name: 'Dotonbori', kanji: '食', place: 'Osaka', color: C.rose },
   { icon: '⚡', name: 'Pokémon Café', kanji: '電', place: 'Osaka', color: '#E3350D' },
   { icon: '🧧', name: 'Katsuo-ji', kanji: '勝', place: 'Osaka', color: C.matcha },
+  { icon: '🦀', name: 'Cangrejo de Dotonbori', kanji: '蟹', place: 'Osaka', color: C.rose },
 ];
 
 export const TABS = [

@@ -1,9 +1,24 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { C, FONT_D, FONT_B } from '../../styles/tokens.js';
 import { STAMPS } from '../../data/misc.js';
 
+const STORAGE_KEY = 'japan-trip-stamps';
+
+function loadDone() {
+  try {
+    return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
+  } catch {
+    return {};
+  }
+}
+
 export function StampGrid() {
-  const [done, setDone] = useState({});
+  const [done, setDone] = useState(loadDone);
+
+  useEffect(() => {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(done));
+  }, [done]);
+
   const count = Object.values(done).filter(Boolean).length;
   return (
     <div>
