@@ -49,12 +49,23 @@ export function Pokemon() {
         </div>
       </div>
       <Callout title="⚡ La reserva es lo más delicado del viaje" color="#E3350D" bg="#FBE9E7">
-        Se abre <strong>~31 días antes a las 18:00 hora de Japón</strong>. Para comer el 5 de
-        agosto: <strong>~5 de julio, 04:00 AM hora de Perú</strong>. Los cupos vuelan en SEGUNDOS.
+        Ojo con esto — <strong>no se abre un día a la vez</strong>. Se libera{' '}
+        <strong>el mes COMPLETO de una sola vez</strong>, el{' '}
+        <strong>día 1 del mes anterior a las 18:00 hora de Japón</strong>. Para comer cualquier día
+        de agosto: <strong>1 de agosto se abre el 1 de julio, ~04:00 AM hora de Perú</strong> — NO
+        el "31 días antes" de la fecha puntual. Ese mes entero (los 31 días) se agota en minutos, a
+        veces segundos.
       </Callout>
-      <Callout title="⚠ Confirmar la fecha de agosto" color={C.kin} bg={TAGS.TODOS.bg}>
-        Las fechas de agosto se anuncian aparte. Revisar pokemon-cafe.jp/en/cafe/news a inicios de
-        julio.
+      <Callout title="⚠ El error más común" color={C.kin} bg={TAGS.TODOS.bg}>
+        Si esperan a "31 días antes" de su fecha exacta, ya perdieron — para cuando llegue esa
+        fecha, el mes completo ya se agotó semanas atrás. Confirmar el día exacto de apertura en{' '}
+        <strong>pokemon-cafe.jp/en/cafe/news</strong> a fines del mes anterior, y estar listos desde
+        el día 1.
+      </Callout>
+      <Callout title="🔁 Si se les pasó: cancelaciones" color={C.matcha} bg={TAGS.ZEN.bg}>
+        No todo está perdido. Entre un 5-15% de las reservas se cancelan antes de la fecha, y esos
+        cupos se liberan de nuevo en la web hasta las <strong>22:00 hora de Japón</strong> la noche
+        anterior. Vale la pena revisar todos los días si no consiguieron en la apertura.
       </Callout>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, margin: '16px 0' }}>
         <Card style={{ padding: '16px', textAlign: 'center' }}>
