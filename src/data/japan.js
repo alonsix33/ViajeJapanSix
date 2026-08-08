@@ -21,6 +21,10 @@ export const JP_CITIES = [
             tag: 'TIP',
             text: 'Sacar efectivo (7-Bank), tarjeta IC Welcome Suica, activar eSIM. Cena temprano y tranquila cerca del hotel — vienen de un vuelo directo de 11h 25min. Si hay ánimo, el onsen del hotel.',
           },
+          {
+            tag: 'TIP',
+            text: 'Etiqueta de estaciones: evitar comer parado en medio del paso de gente (en Tokio casi nadie lo hace) — mejor buscar una banca o el rincón "eat-in" de las tiendas. En las escaleras eléctricas, en Tokio y la mayoría de Japón se para del lado IZQUIERDO, dejando el derecho libre para quien va con prisa. (Ojo: esto se invierte en Kansai — Kioto, Nara y Osaka — más adelante en el viaje.)',
+          },
         ],
       },
       {
@@ -319,6 +323,10 @@ export const JP_CITIES = [
             text: 'Impuesto de alojamiento de Kioto: pagar ¥2,400 en EFECTIVO al check-in (¥200 × 4 personas × 3 noches). No está incluido en la reserva.',
           },
           {
+            tag: 'TIP',
+            text: 'Cambio de región: desde aquí (Kansai — Kioto, Nara y Osaka) las escaleras eléctricas se paran del lado DERECHO, dejando el izquierdo libre para quien va con prisa — al revés que en Tokio.',
+          },
+          {
             tag: 'ZEN',
             text: 'Atardecer por Gion y el canal Shirakawa.',
             routes: [
@@ -356,6 +364,10 @@ export const JP_CITIES = [
                   'Sin transbordos. Verificar en la pantalla que el tren diga "Local", no "Rapid". La Estación JR Inari deja justo frente al torii principal. Usar tarjeta IC para evitar máquinas expendedoras en japonés. Desglose del trayecto: ~15 min caminando a Kyoto Station + ~5 min de tren (2 paradas).',
               },
             ],
+          },
+          {
+            tag: 'TIP',
+            text: 'Si el grupo se divide en la subida (uno sigue, otro se cansa, etc.), acuerden un punto de encuentro FIJO antes de separarse — por ejemplo Yotsutsuji. Arriba de ese mirador el camino es un circuito que rodea la montaña: quien sube por un lado no se cruza con quien sube por el otro hasta la cima o hasta volver a bajar — así que no sirve "ya te alcanzo" sin un punto claro.',
           },
           {
             tag: 'ZEN',
@@ -425,6 +437,14 @@ export const JP_CITIES = [
                   'Sale cada 15-30 min, sin reserva. Ojo: algunos trenes de esta línea no llegan directo a Nara y piden transbordo en Yamato-Saidaiji (mismo andén, 2 paradas más) — mirar el letrero del tren o preguntar antes de subir. Llegando a Kintetsu Nara Station, el Parque de Nara y el Gran Buda quedan a ~5-10 min caminando (vs. ~20-25 min desde la Estación JR Nara).',
               },
             ],
+          },
+          {
+            tag: 'TIP',
+            text: 'JR y Kintetsu son compañías distintas con torniquetes separados, aunque compartan el mismo edificio de Kyoto Station — no hay pase interno de uno a otro. Si entran por JR y quieren Kintetsu (o viceversa), hay que salir y volver a entrar. Con ICOCA, entrar y salir de la misma estación sin viajar sí puede cobrar tarifa mínima.',
+          },
+          {
+            tag: 'TIP',
+            text: 'Si pasan un torniquete por error (línea equivocada, o entraron sin querer), díganselo al personal de la caseta ahí mismo — siempre ayudan a corregirlo sin problema, no hay que resolverlo solos.',
           },
           {
             tag: 'TODOS',
@@ -509,6 +529,10 @@ export const JP_CITIES = [
           {
             tag: 'TIP',
             text: 'No usar el Haruka Express para este tramo: aunque es directo (sin transbordo), cuesta ¥1,890-2,400 p/p — el descuento turístico del Haruka solo aplica hacia/desde el aeropuerto de Kansai — vs. ~¥860-900 p/p total por JR + Metro.',
+          },
+          {
+            tag: 'TIP',
+            text: 'Cuidado con los trenes "Limited Express" (Thunderbird, Haruka, etc.): casi siempre piden un boleto adicional aparte de la tarjeta IC (Suica/ICOCA), y Google Maps a veces solo muestra la tarifa base sin ese suplemento. Para tramos cortos entre ciudades, prefieran el que diga "Rapid" o "Local" — no necesitan reserva ni boleto extra. Si Google Maps no deja claro qué tipo de tren es, una búsqueda con IA (ChatGPT, Gemini, etc.) suele explicarlo mejor, o simplemente pregúntenle al personal de la estación.',
           },
           {
             tag: 'SALIR',
