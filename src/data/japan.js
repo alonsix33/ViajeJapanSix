@@ -586,7 +586,7 @@ export const JP_CITIES = [
       },
       {
         date: 'Vie 7 Ago',
-        title: 'Castillo, mercado y compras',
+        title: 'Castillo, Umeda Sky Building y Shinsekai',
         items: [
           {
             tag: 'ZEN',
@@ -607,34 +607,18 @@ export const JP_CITIES = [
             ],
           },
           {
-            tag: 'COMIDA',
-            text: 'Mercado Kuromon: mariscos, frutas, comida callejera.',
+            tag: 'STAR',
+            text: 'Umeda Sky Building (梅田スカイビル) — el mirador flotante entre las dos torres, ¥2,000 p/p, abierto hasta las 10:30pm. Reemplazó al Mercado Kuromon y Den Den Town en el plan original.',
             routes: [
               {
                 mode: 'metro',
-                line: 'Osaka Metro Tanimachi Line → transbordo a Osaka Metro Sennichimae Line',
+                line: 'Osaka Metro Tanimachi Line, misma dirección Higashi-Umeda',
                 from: 'Estación Tanimachi 4-chome (Castillo de Osaka), Osaka',
-                to: 'Estación Nipponbashi (Mercado Kuromon Ichiba), Osaka',
-                time: '~15-20 min',
+                to: 'Estación Higashi-Umeda, Osaka',
+                time: '~10-12 min',
                 cost: '~¥240 p/p',
                 notes:
-                  'Caminar ~5 min de vuelta a la estación. Línea Tanimachi dirección Namba, 1 parada hasta Tanimachi Kyuchome (transbordo en el mismo complejo de estación, señalización naranja "Sennichimae Line"). Línea Sennichimae dirección Namba, 1 parada hasta Nipponbashi. Seguir salidas hacia "Kuromon Ichiba Market".',
-              },
-            ],
-          },
-          {
-            tag: 'TECH',
-            text: 'Den Den Town: el Akihabara de Osaka.',
-            routes: [
-              {
-                mode: 'caminar',
-                line: 'A pie, sin tren',
-                from: 'Mercado Kuromon Ichiba, Osaka',
-                fromQuery: 'Kuromon Ichiba Market, Osaka',
-                to: 'Den Den Town, Osaka',
-                time: '~8-10 min',
-                notes:
-                  'Totalmente caminable. Den Den Town está inmediatamente al sur/este del mercado, sobre Sakai-suji y Nipponbashi-suji.',
+                  'Sin transbordo, siguiendo la misma línea que trajo del castillo. De ahí, ~9 min caminando siguiendo los carteles color café con la silueta del edificio (pasillo subterráneo "Shin Umeda City", bien señalizado en inglés).',
               },
             ],
           },
@@ -643,13 +627,16 @@ export const JP_CITIES = [
             text: 'Shinsekai de noche y Don Quijote (24h) para souvenirs.',
             routes: [
               {
-                mode: 'caminar',
-                line: 'A pie, sin tren',
-                from: 'Den Den Town, Osaka',
-                to: 'Shinsekai (Torre Tsutenkaku), Osaka',
-                time: '~15 min',
+                mode: 'metro',
+                line: 'Osaka Metro Midosuji Line, dirección Namba/Tennoji',
+                from: 'Umeda Sky Building, Osaka',
+                fromQuery: 'Umeda Station, Osaka',
+                to: 'Estación Dobutsuen-mae (Shinsekai), Osaka',
+                toQuery: 'Dobutsuen-mae Station, Osaka',
+                time: '~13 min',
+                cost: '~¥230 p/p',
                 notes:
-                  'Totalmente caminable. Caminar hacia el sur/suroeste; la Torre Tsutenkaku es visible desde lejos y sirve de referencia.',
+                  'Directo, sin transbordos. La Torre Tsutenkaku y Shinsekai quedan a un par de minutos caminando desde la salida de la estación.',
               },
             ],
           },
