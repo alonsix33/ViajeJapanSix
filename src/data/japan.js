@@ -343,7 +343,7 @@ export const JP_CITIES = [
           {
             tag: 'ZEN',
             time: '7am',
-            text: 'Fushimi Inari, SOLO la parte baja — NO se sube la montaña completa. Entrar por el santuario principal y caminar el túnel de torii hasta el mirador Yotsutsuji (~30-40 min subiendo, mismo tiempo bajando). Ahí se da la vuelta y punto: seguir subiendo hasta la cima del Monte Inari toma 1.5-2h adicionales y no dejaría tiempo para Kiyomizu-dera ni el té.',
+            text: 'Fushimi Inari: entrar por el santuario principal y caminar el túnel de torii hasta el mirador Yotsutsuji (~30-40 min subiendo, mismo tiempo bajando) — con eso ya se ve lo más icónico. Seguir hasta la cima del Monte Inari suma 1.5-2h adicionales: si tienen tiempo, energía y ganas de una buena caminata, vale la pena y es lindo — pero cansa, y les quita tiempo para Kiyomizu-dera y el té. No es un "no" rotundo, solo depende de cómo vengan de ánimo ese día.',
             routes: [
               {
                 mode: 'tren',
