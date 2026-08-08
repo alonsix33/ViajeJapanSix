@@ -582,6 +582,10 @@ export const JP_CITIES = [
             text: 'En el templo te dan una postal en blanco y hay 6 estaciones para ir estampando sellos y completar el dibujo — pura experiencia goshuincho. Recorrido ~1h30.',
           },
           { tag: 'TIP', text: 'Llevar efectivo + IC card para el bus y el templo.' },
+          {
+            tag: 'TIP',
+            text: 'Los Katsu Daruma (los muñecos rojos de la victoria) se compran subiendo, cerca del templo principal — no en la tienda de souvenirs de la entrada.',
+          },
         ],
       },
       {
